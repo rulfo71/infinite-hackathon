@@ -38,7 +38,7 @@ a:hover {
 
 html,
 body {
-  background-color: #000;
+  background-image: url('static/background.png');
 }
 
 body {
@@ -50,10 +50,17 @@ body {
   justify-content: center;
   color: #fff;
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
   font-family: 'Space Grotesk';
 }
 
+.title-image {
+  background-color: black;
+  border-radius: 12px;
+  padding: 40px 30px;
+  left: 0px;
+  width: -webkit-fill-available;
+  max-width: max-content;
+}
 /*
  * Header
  */
@@ -96,27 +103,46 @@ body {
   }
 }
 
-.cover-container {
-  max-width: 60em;
-}
 /*
  * Cover
  */
 .cover {
   padding: 0 1.5rem;
 }
-.cover .btn-lg {
-  padding: .75rem 1.25rem;
-  font-weight: 700;
+
+.info-text {
+  background-color: black;
+  border-radius: 12px;
+  font-size: 18px;
+  padding: 20px;
+  max-width: 40rem;
 }
 
-h1 {
-    font-size: 4rem;
+.long {
+  max-width: fit-content;
 }
 
+.apply-btn {
+  background-color: black;
+  border-radius: 50px;
+  padding: 30px;
+  border: none;
+  font-size: 25px;
+}
+
+.dot {
+  height: 9px;
+  width: 9px;
+  background-color: #FFF;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 2px;
+}
 /*
  * Footer
  */
 .mastfoot {
   color: rgba(255, 255, 255, .5);
+  text-align: left;
 }
