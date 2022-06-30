@@ -58,9 +58,13 @@ body {
   border-radius: 12px;
   padding: 40px 30px;
   left: 0px;
-  width: -webkit-fill-available;
-  max-width: max-content;
+  width: 100%;
+  width: -moz-available;          /* WebKit-based browsers will ignore this. */
+  width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+  width: fill-available;
+  max-width: 60em;
 }
+
 /*
  * Header
  */
