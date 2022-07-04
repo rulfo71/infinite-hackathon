@@ -36,9 +36,10 @@ a:hover {
     url('static/SpaceGrotesk-SemiBold.ttf') format('truetype');
   }
 
-html,
 body {
   background-image: url('static/background.png');
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 body {
