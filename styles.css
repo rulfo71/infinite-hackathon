@@ -19,7 +19,7 @@ a:hover {
   color: #333;
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #fff;
-  border: .05rem solid #fff;
+  border: 1px solid #fff;
 }
 
 
@@ -51,7 +51,7 @@ body {
   -webkit-box-pack: center;
   justify-content: center;
   color: #fff;
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
   font-family: 'Space Grotesk';
 }
 
@@ -61,8 +61,8 @@ body {
   padding: 40px 0px;
   left: 0px;
   width: 100%;
-  width: -moz-available;          /* WebKit-based browsers will ignore this. */
-  width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+  width: -moz-available;
+  width: -webkit-fill-available;
   width: fill-available;
   max-width: 920px;
 }
@@ -71,7 +71,7 @@ body {
  * Cover
  */
 .cover {
-  padding: 0 1.5rem;
+  padding: 0 5px;
 }
 
 .info-text {
@@ -79,16 +79,17 @@ body {
   border-radius: 12px;
   font-size: 18px;
   padding: 20px;
-  max-width: 40rem;
+  max-width: 900px;
 }
 
 .title-text {
-  max-width: 60rem;
-  width: 60rem;
+  max-width: 600px;
+  width: 600px;
 }
 
 .long {
-  max-width: fit-content;
+  width: fit-content;
+  max-width: 1200px;
 }
 
 .apply-btn {
@@ -117,6 +118,7 @@ body {
 }
 
 .org-logo {
-  height: 25px;
+  height: 35px;
   width: auto;
+  padding: 0px 5px;
 }
