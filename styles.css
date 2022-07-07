@@ -12,17 +12,6 @@ a:hover {
   color: #fff;
 }
 
-/* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: 1px solid #fff;
-}
-
-
 /*
  * Base structure
  */
@@ -83,7 +72,7 @@ body {
 }
 
 .title-text {
-  max-width: 600px;
+  max-width: 100%;
   width: 600px;
 }
 
@@ -96,8 +85,11 @@ body {
   background-color: black;
   border-radius: 50px;
   padding: 30px;
-  border: solid 1px palevioletred;
   font-size: 25px;
+}
+
+.apply-btn:hover {
+  border: solid 1px palevioletred;
 }
 
 .dot {
