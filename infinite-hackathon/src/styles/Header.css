@@ -1,0 +1,34 @@
+.title-image {
+    background-color: black;
+    border-radius: 12px;
+    padding: 40px 0px;
+    left: 0px;
+    width: 100%;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: fill-available;
+    max-width: 85%;
+}
+
+.title-text {
+    max-width: 85%;
+    width: 600px;
+}
+
+
+.item {
+    display: flex
+}
+.itemRight {
+    margin-left: 50px;
+}
+
+
+@media (max-width: 600px) {
+    .item {
+        display: grid;
+    }
+    .itemRight {
+        margin-left: 0px;
+    }
+}
