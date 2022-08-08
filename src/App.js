@@ -9,7 +9,7 @@ import Header from './components/header';
 function App() {
   return (
     <div className="App">
-      <Header/>
+      <Header />
       <Route
         component={Home}
         path='/'
@@ -18,7 +18,7 @@ function App() {
         component={Faq}
         path='/faq'
       />
-      <Footer/>
+      <Footer />
     </div>
   );
 }
