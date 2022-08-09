@@ -1,0 +1,74 @@
+.footer {
+  /* padding: 20px;
+    margin: 1.5rem; */
+  font-size: 3vmin;
+  width: 100%;
+}
+
+.text {
+  margin-left: 5px;
+}
+
+.twitter-logo {
+  color: #808080;
+}
+
+.title {
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, .5);
+}
+
+.logo {
+  height: 35px;
+  width: auto;
+  padding: 0px 5px;
+  vertical-align: middle;
+}
+
+.organizers {
+  margin-top: 10px;
+  display: flex;
+}
+
+.lead-org {
+  width: 30%;
+}
+
+
+.co-org {
+  margin-right: 10px;
+}
+
+.apply {
+  margin-left: 20px;
+}
+
+.grid {
+  display: grid;
+}
+
+.footerWrapper {
+  padding: 20px;
+}
+
+.apply-btn {
+  background-color: black;
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 30px;
+  font-size: 25px;
+  color: #fff;
+  border: solid 1px black;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.apply-btn:hover {
+  border: solid 1px palevioletred;
+}
+
+@media (max-width: 600px) {
+  .organizers {
+    margin-top: 10px;
+    display: grid;
+  }
+}

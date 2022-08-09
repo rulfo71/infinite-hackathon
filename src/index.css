@@ -1,0 +1,8 @@
+body {
+  margin: 0;
+  font-family: 'Space Grotesk';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: left;
+  line-height: 1.5;
+}

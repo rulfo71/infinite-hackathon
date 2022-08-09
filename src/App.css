@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('../public/fonts/SpaceGrotesk-Regular.ttf') format('truetype'),
+  url('../public/fonts/SpaceGrotesk-Bold.ttf') format('truetype'),
+  url('../public/fonts/SpaceGrotesk-Light.ttf') format('truetype'),
+  url('../public/fonts/SpaceGrotesk-Medium.ttf') format('truetype'),
+  url('../public/fonts/SpaceGrotesk-SemiBold.ttf') format('truetype');
+}
+
+.App {
+  background-image: url('../public/background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 20px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
