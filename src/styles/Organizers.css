@@ -1,0 +1,82 @@
+.organizers {
+  align-content: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  font-size: 3rem;
+  justify-content: center;
+}
+
+.divider {
+  margin: 20px 50px;
+}
+
+.subtitle {
+  display: flex;
+  font-size: 0.7rem;
+  justify-content: center;
+}
+
+.column {
+  float: left;
+  text-align: center;
+  width: 33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.logo {
+  height: 35px;
+  margin-right: 5px;
+  padding: 0px 5px;
+  vertical-align: sub;
+  width: auto;
+}
+
+.brand {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.extras {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.gridContainer {
+  display: grid;
+  justify-content: center;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+  .brand {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .subtitle {
+    display: flex;
+    font-size: 0.7rem;
+    justify-content: center;
+    width: 80%;
+    align-self: center;
+    text-align: center;
+  }
+}

@@ -1,22 +1,36 @@
-import infinite from '../static/infinite.svg'
 import { Link } from 'wouter'
+//assets
+import infinite from '../static/infinite.svg'
+//styles
 import '../styles/Header.css';
+//components
+import Button from './Button';
+
 
 export default function Header() {
 
   return (
     <>
-      <section className="info-text title-text">
+      <section className="header">
         <Link href='/'>
           <img src={infinite} alt="" className="title-image" />
-          <br />
-          <strong className='float-left'>GENESIS EDITION</strong>
-          <strong className="float-right"> #0 </strong>
         </Link>
-      </section>
-      <section className='item'>
-        <div className="info-text"><span className="dot"></span> <strong>Date</strong> 7-9 October 2022</div>
-        <div className="info-text itemRight"><span className="dot"></span> <strong>Location</strong> Bogota Colombia </div>
+        <section className="buttons-right">
+          <button className='button button-black'>
+            <span class="dot" /> <strong>HOME</strong>
+          </button>
+          <button className='button-black button'>
+            <span class="dot" /> <strong>GENESIS</strong>
+          </button>
+            <Button
+              text='APPLY TO HACK'
+              img='enter-icon.png'
+              classImg='dot'
+              classText='apply-btn-text'
+              classButton='button button-white'
+              link='https://forms.gle/gKy5XM2YLNP3gNXU9'
+            />
+        </section>
       </section>
     </>
   )
