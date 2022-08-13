@@ -7,7 +7,13 @@ import '../styles/Header.css';
 import Button from './Button';
 
 
-export default function Header() {
+export default function Header(props) {
+
+  const { active } = props
+
+  const isActive = (current) => {
+    return `button ${current === active ? 'active' : 'inactive'} `;
+  }
 
   return (
     <>
@@ -16,20 +22,24 @@ export default function Header() {
           <img src={infinite} alt="" className="title-image" />
         </Link>
         <section className="buttons-right">
-          <button className='button button-black'>
-            <span class="dot" /> <strong>HOME</strong>
-          </button>
-          <button className='button-black button'>
-            <span class="dot" /> <strong>GENESIS</strong>
-          </button>
-            <Button
-              text='APPLY TO HACK'
-              img='enter-icon.png'
-              classImg='dot'
-              classText='apply-btn-text'
-              classButton='button button-white'
-              link='https://forms.gle/gKy5XM2YLNP3gNXU9'
-            />
+          <Link href='/'>
+            <div className={isActive('home')}>
+              <span class="dot" /> <strong>HOME</strong>
+            </div>
+          </Link>
+          <Link href='/genesis'>
+            <div className={isActive('genesis')}>
+              <span class="dot" /> <strong>GENESIS</strong>
+            </div>
+          </Link>
+          <Button
+            text='APPLY TO HACK'
+            img='enter-icon.png'
+            classImg='dot'
+            classText='apply-btn-text'
+            classButton='button button-white'
+            link='https://forms.gle/gKy5XM2YLNP3gNXU9'
+          />
         </section>
       </section>
     </>

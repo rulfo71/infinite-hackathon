@@ -1,0 +1,71 @@
+.genesisContainer {
+  background-image: url('../../public/genesis-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+
+.genesisText {
+  color: #fff;
+  font-size: 4rem;
+  width: 60%;
+  margin-top: 100px;
+}
+
+.bodyGenesis {
+  justify-self: center;
+  max-width: 60%;
+  height: auto;
+}
+
+.bodyContainer {
+  display: grid;
+  margin-top: 100px;
+}
+
+.active {
+  background-color: blue;
+}
+
+.imgContainer {
+  display: grid;
+  margin-top: 100px;
+}
+
+
+.bodyText {
+  color: #fff;
+  margin-top: 50px;
+  width: 50%;
+  font-size: 1.3rem;
+}
+
+.dataBoxContainer {
+  justify-self: center;
+  width: 60%;
+  justify-content: center;
+  display: flex;
+}
+
+.uniquePhrase {
+  font-size: 2rem;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  .dataBoxContainer {
+    justify-self: center;
+    width: 100%;
+    justify-content: center;
+    display: grid;
+    place-items: center;
+  }
+}

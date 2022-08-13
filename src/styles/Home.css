@@ -43,4 +43,13 @@
   .mainText {
     font-size: 2rem;
   }
+
+  .homeContainer {
+    background-image: url('../../public/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    min-height: 70vh;
+  }
 }

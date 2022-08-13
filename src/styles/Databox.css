@@ -1,0 +1,23 @@
+
+.dataBox {
+  background-color: #fff;
+  color: #000;
+  width: 20%;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 50px 25px;
+}
+
+.dataBoxTitle {
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.dataBoxBody {
+  font-size: 0.7rem;
+}
+
+.dataBoxFooter {
+  font-size: 1rem;
+  font-weight: 500;
+}

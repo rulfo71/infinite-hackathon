@@ -14,12 +14,6 @@
   width: fill-available;
 }
 
-.button-black {
-  background-color: #000;
-  color: #fff;
-  border: solid 1px #000;
-}
-
 .button-white {
   background-color: #fff;
   border-radius: 40px;
@@ -48,8 +42,20 @@
   width: 100%;
 }
 
+.active{
+  background-color: #1400FF;
+  border: solid 1px #1400FF;
+  color: #fff;
+}
+
+.inactive{
+  background-color: #000;
+  color: #fff;
+  border: solid 1px #000;
+}
+
 @media screen and (max-width: 600px) {
-  .button-black {
+  .button-white {
     display: none;
   }
 }

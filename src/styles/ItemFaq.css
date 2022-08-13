@@ -1,0 +1,31 @@
+.faqQuestion {
+  background-color: transparent;
+  color: #fff;
+  font-family: 'Space Grotesk';
+  font-size: 1.5rem;
+}
+
+.itemFaqContainer {
+  cursor: pointer;
+}
+
+.iconQuestion {
+  margin-right: 10px;
+}
+
+.answerShown {
+  margin-top: 10px;
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: opacity 2s;
+  margin-bottom: 10px;
+}
+
+.answerHidden {
+  margin-top: 10px;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 10px;
+}

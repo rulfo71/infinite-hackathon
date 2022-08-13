@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <section className='homeContainer'>
-        <Header />
+        <Header active='home' />
         <section className='bodyHome'>
           <section className='mainSection'>
             <span class="black-dot" /> <strong className='topText'>INAUGURAL EVENT</strong><br />
@@ -22,7 +22,7 @@ export default function Home() {
               Be part of a new kind of hackerthon in Bogotá: <br /> Infinite Genesis
             </strong>
             <div>
-              <Button text='LEARN MORE' classButton='button button-white' img='enter-icon.png' classImg='dot' classText='apply-btn-text' />
+              <Button text='LEARN MORE' classButton='button button-white' img='enter-icon.png' classImg='dot' classText='apply-btn-text' link='/genesis' isLocalRedirect />
             </div>
           </section>
           <InfinitePhrases />
