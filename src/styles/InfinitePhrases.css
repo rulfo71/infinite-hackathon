@@ -1,0 +1,13 @@
+.InfinitePhrasesContainer {
+  color: #fff;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.fade {
+  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 20%, transparent 100%);
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+}

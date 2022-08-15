@@ -1,15 +1,12 @@
 import { Route } from 'wouter'
 import Faq from './pages/Faq';
+import Genesis from './pages/Genesis';
 import Home from './pages/Home';
 import './App.css';
-
-import Footer from './components/footer';
-import Header from './components/header';
 
 function App() {
   return (
     <div className="App">
-      <Header />
       <Route
         component={Home}
         path='/'
@@ -18,7 +15,10 @@ function App() {
         component={Faq}
         path='/faq'
       />
-      <Footer />
+      <Route
+        component={Genesis}
+        path='/genesis'
+      />
     </div>
   );
 }

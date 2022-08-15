@@ -1,0 +1,46 @@
+.socialContainer {
+  text-align: -webkit-center;
+}
+
+.socialIcon {
+  width: 20px;
+}
+
+.buttonSocial {
+  width: 160px;
+  background-color: transparent;
+  border-color: #fff;
+  border-width: 1px;
+  border-radius: 35px;
+}
+
+.buttonSocialMiddle {
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+.socialText {
+  color: #fff;
+  font-family: 'Space Grotesk';
+  font-size: 1rem;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+  .socialContainer {
+    text-align: -webkit-center;
+    display: grid;
+    justify-content: center;
+  }
+
+  .buttonSocial {
+    width: 160px;
+    background-color: transparent;
+    border-color: #fff;
+    border-width: 1px;
+    place-self: center;
+    border-radius: 35px;
+  }
+}
