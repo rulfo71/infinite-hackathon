@@ -5,8 +5,6 @@ export default function Footer() {
   return (
     <div className='footerContainer'>
       <img src={infinite} alt='infinite' className='imgFooter' />
-    </div>
-     
+    </div>     
   )
-
 }

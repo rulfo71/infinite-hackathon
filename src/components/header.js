@@ -6,7 +6,6 @@ import '../styles/Header.css';
 //components
 import Button from './Button';
 
-
 export default function Header(props) {
 
   const { active } = props
