@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/infinite-hackathon/static/css/main.d78fe5ed.css",
+    "main.js": "/infinite-hackathon/static/js/main.dba1364e.js",
+    "static/media/genesis-background.png": "/infinite-hackathon/static/media/genesis-background.9156d7c8b2501cb21482.png",
+    "static/media/background.png": "/infinite-hackathon/static/media/background.0d9612221ab123e95d8c.png",
+    "static/media/Drop.png": "/infinite-hackathon/static/media/Drop.07fddc761ec836508f70.png",
+    "static/media/bogota.png": "/infinite-hackathon/static/media/bogota.d07f80478b076e5a0399.png",
+    "static/media/SpaceGrotesk-Light.ttf": "/infinite-hackathon/static/media/SpaceGrotesk-Light.1cb0366853ec7b625eb2.ttf",
+    "static/media/SpaceGrotesk-Medium.ttf": "/infinite-hackathon/static/media/SpaceGrotesk-Medium.922ec0f910362b8c7e5c.ttf",
+    "static/media/SpaceGrotesk-Regular.ttf": "/infinite-hackathon/static/media/SpaceGrotesk-Regular.0af8901c66919168e22b.ttf",
+    "static/media/SpaceGrotesk-SemiBold.ttf": "/infinite-hackathon/static/media/SpaceGrotesk-SemiBold.dfb33a0f7c2e9b440811.ttf",
+    "static/media/SpaceGrotesk-Bold.ttf": "/infinite-hackathon/static/media/SpaceGrotesk-Bold.25a5e7fd63d35d7f6448.ttf",
+    "static/media/body.png": "/infinite-hackathon/static/media/body.dff1df76d2b8b4477dda.png",
+    "static/media/infinite.svg": "/infinite-hackathon/static/media/infinite.d363d0aaf454f30a00bbdcce3bc2961d.svg",
+    "index.html": "/infinite-hackathon/index.html",
+    "main.d78fe5ed.css.map": "/infinite-hackathon/static/css/main.d78fe5ed.css.map",
+    "main.dba1364e.js.map": "/infinite-hackathon/static/js/main.dba1364e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d78fe5ed.css",
+    "static/js/main.dba1364e.js"
+  ]
+}
