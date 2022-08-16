@@ -24,8 +24,8 @@ jobs:
       with:
         node-version: 14.x
     
-    # - name: Install NPM packages
-    #   run: npm ci
+    - name: Install NPM packages
+      run: yarn 
     
     - name: Build project
       run: yarn build
