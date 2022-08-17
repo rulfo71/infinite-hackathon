@@ -1,24 +1,20 @@
-import { Route } from 'wouter'
-import Faq from './pages/Faq';
+import { HashRouter, Routes, Route } from "react-router-dom";
+
 import Genesis from './pages/Genesis';
 import Home from './pages/Home';
 import './App.css';
 
 function App() {
+  console.log('process.env.PUBLIC_URL: ', process.env.PUBLIC_URL)
+  console.log('process.env.NODE_ENV: ', process.env.NODE_ENV)
   return (
     <div className="App">
-      <Route
-        component={Home}
-        path='/'
-      />
-      <Route
-        component={Faq}
-        path='/faq'
-      />
-      <Route
-        component={Genesis}
-        path='/genesis'
-      />
+      <HashRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/genesis" element={<Genesis />} />
+        </Routes>
+      </HashRouter>
     </div>
   );
 }
