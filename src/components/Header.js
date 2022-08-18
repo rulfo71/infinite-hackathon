@@ -1,4 +1,5 @@
-import { Link } from 'wouter'
+
+import { Outlet, Link } from "react-router-dom";
 //assets
 import infinite from '../static/infinite.svg'
 //styles
@@ -17,16 +18,16 @@ export default function Header(props) {
   return (
     <>
       <section className="header">
-        <Link href='/'>
+        <Link to='/'>
           <img src={infinite} alt="" className="title-image" />
         </Link>
         <section className="buttons-right">
-          <Link href='/'>
+          <Link to='/'>
             <div className={isActive('home')}>
               <span class="dot" /> <strong>HOME</strong>
             </div>
           </Link>
-          <Link href='/genesis'>
+          <Link to='/genesis'>
             <div className={isActive('genesis')}>
               <span class="dot" /> <strong>GENESIS</strong>
             </div>
@@ -41,6 +42,7 @@ export default function Header(props) {
           />
         </section>
       </section>
+      <Outlet/>
     </>
   )
 }

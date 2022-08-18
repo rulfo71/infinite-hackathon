@@ -11,7 +11,7 @@
   width: -moz-available;
   width: -webkit-fill-available;
   width: 500px;
-  width: fill-available;
+  width: stretch;
 }
 
 .button-white {

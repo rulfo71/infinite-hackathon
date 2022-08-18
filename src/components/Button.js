@@ -1,4 +1,4 @@
-import { Link } from 'wouter'
+import { Link } from "react-router-dom";
 
 import '../styles/Button.css';
 
@@ -7,7 +7,7 @@ export default function Button(props) {
   return (
     <>
       {isLocalRedirect ? (
-        <Link href={link}>
+        <Link to={link}>
           <div className={classButton}>
             <img src={`${img}`} alt={img} className={classImg} />
             <strong className={classText}> {text} </strong>
