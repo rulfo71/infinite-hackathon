@@ -18,3 +18,11 @@ a {
   color: #fff;
   text-decoration: none;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+#page-wrap {
+  padding-bottom: 10px;
+}

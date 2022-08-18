@@ -24,6 +24,7 @@
   align-self: center;
   padding-top: 10px;
   padding-bottom: 35px;
+  text-align: -webkit-center;
 }
 
 .imgBody {
