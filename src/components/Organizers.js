@@ -14,7 +14,7 @@ export default function Organizers() {
       </div>
       <div className='gridContainer'>
 
-        {organizers.map(o => <Organizer key={o.name} logo={o.logo} name={o.name} rol={o.rol} description={o.description} />)}
+        {organizers.map(o => <Organizer key={o.name} logo={o.logo} name={o.name} rol={o.rol} description={o.description} url={o.url} />)}
         <hr className='divider' class="solid" />
       </div>
     </section>

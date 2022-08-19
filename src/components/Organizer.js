@@ -1,14 +1,14 @@
 import '../styles/Organizers.css';
 
 export default function Organizer(props) {
-  const { logo, name, rol, description } = props
+  const { logo, name, rol, description, url } = props
   return (
     <div className='row'>
       <hr className='solid divider' />
-      <div className='column brand'>
+      <a className='column brand' href={url} target="_blank" rel='noreferrer'>
         <img src={`${logo}`} alt={name} className="logo" />
         {name}
-      </div>
+      </a>
       <div className='column extras'>
         <strong> {rol} </strong>
       </div>

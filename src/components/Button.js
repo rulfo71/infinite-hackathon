@@ -16,7 +16,7 @@ export default function Button(props) {
         </Link>
       )
         :
-        <a className={classButton} href={link}>
+        <a className={classButton} href={link} target="_blank" rel='noreferrer'>
           <img src={`${img}`} alt={img} className={classImg} />
           <strong className={classText}>{text}</strong>
         </a>
