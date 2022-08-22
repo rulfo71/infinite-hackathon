@@ -133,12 +133,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
     top: 20px;
     float: right;
   }
-  /* Position and sizing of clickable cross button
-.bm-cross-button {
-  height: 50px !important;
-  width: 50px !important;
-  top: 20px !important;
-  right: 20px !important;
-  cursor: pointer;
-} */
+
+  .imgBurgerButton {
+    border-radius: 10px;
+  }
+
 }

@@ -27,7 +27,7 @@ export default function Sidebar(props) {
   }
 
   return (
-    <Menu isOpen={isOpen} onOpen={handleIsOpen} onClose={handleIsOpen} width={'100%'} right customBurgerIcon={<img src={burger} alt='burger' />} customCrossIcon={<img src={cross} alt='cross' />}>
+    <Menu isOpen={isOpen} onOpen={handleIsOpen} onClose={handleIsOpen} width={'100%'} right customBurgerIcon={<img src={burger} className='imgBurgerButton' alt='burger' />} customCrossIcon={<img src={cross} alt='cross' />}>
       <div className='headerBurger'>
         <img src={infinite} alt="infinite" className="infinite-image-sidebar" />
       </div>
