@@ -10,7 +10,7 @@
 
 .genesisText {
   color: #fff;
-  font-size: 4rem;
+  font-size: 5vw;
   width: 60%;
   margin-top: 100px;
 }
@@ -40,7 +40,7 @@
   color: #fff;
   margin-top: 50px;
   width: 50%;
-  font-size: 1.3rem;
+  font-size: 1.5vw;
 }
 
 .dataBoxContainer {
@@ -51,16 +51,10 @@
 }
 
 .uniquePhrase {
-  font-size: 2rem;
+  font-size: 2.5vw;
 }
 
-
-
-
-
-
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .dataBoxContainer {
     justify-self: center;
     width: 100%;
@@ -68,4 +62,27 @@
     display: grid;
     place-items: center;
   }
+
+  .genesisText {
+    font-size: 3rem;
+  }
+
+  .bodyText {
+    font-size: 1.3rem;
+    width: auto;
+  }
+
+  .uniquePhrase {
+    font-size: 1.5rem;
+  }
+
+  .bodyContainer {
+    display: grid;
+    margin-top: 0px;
+  }
+
+  .bodyGenesis {
+    max-width: 70%;
+  }
+
 }

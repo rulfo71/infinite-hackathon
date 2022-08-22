@@ -6,11 +6,10 @@
   height: -webkit-fill-available;
   height: -webkit-fill-available;
   left: 0px;
-  max-width: 33%;
+  max-width: 66%;
   padding: 1rem;
   width: -moz-available;
   width: -webkit-fill-available;
-  width: 500px;
   width: stretch;
 }
 
@@ -54,7 +53,7 @@
   border: solid 1px #000;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .header {
     justify-content: space-between;
     display: block;

@@ -7,14 +7,26 @@
 
 .text {
   max-width: 50%;
-  font-size: 2rem;
+  font-size: 2vw;
 }
 
 .name {
   margin-top: 2rem;
-  font-size: 1rem;
+  font-size: 1.5vw;
   text-align: left;
   max-width: 50%;
   align-items: center;
   display: flex;
+}
+
+@media screen and (max-width: 900px) {
+  .text {
+    font-size: 1.5rem;
+    max-width: 70%;
+  }
+  .name {
+    font-size: 1rem;
+    display: block;
+    text-align: center;
+  }
 }

@@ -9,7 +9,7 @@
 
 .title {
   display: flex;
-  font-size: 3rem;
+  font-size: 4vw;
   justify-content: center;
 }
 
@@ -19,7 +19,7 @@
 
 .subtitle {
   display: flex;
-  font-size: 0.7rem;
+  font-size: 1vw;
   justify-content: center;
 }
 
@@ -45,13 +45,14 @@
 }
 
 .brand {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 2vw;
+  display: flex;
+  align-items: center;
   text-align: left;
 }
 
 .extras {
-  font-size: 1rem;
+  font-size: 1.5vw;
   margin-top: 10px;
 }
 
@@ -60,16 +61,26 @@
   justify-content: center;
 }
 
+.row {
+  display: flex;
+  align-items: center;
+}
+
 /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .column {
     width: 100%;
   }
 
   .brand {
+    display: block;
     font-size: 2rem;
     margin-bottom: 1rem;
     text-align: center;
+  }
+
+  .title {
+    font-size: 3rem;
   }
 
 
@@ -79,10 +90,19 @@
 
   .subtitle {
     display: flex;
-    font-size: 0.7rem;
+    font-size: 1.2rem;
     justify-content: center;
     width: 80%;
     align-self: center;
     text-align: center;
   }
+
+  .extras {
+    font-size: 1rem;
+  }
+
+  .row {
+    display: block;
+  }
+  
 }
