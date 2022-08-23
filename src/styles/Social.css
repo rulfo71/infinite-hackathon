@@ -1,5 +1,6 @@
 .socialContainer {
   text-align: -webkit-center;
+  margin-top: 20px;
 }
 
 .socialIcon {
@@ -7,7 +8,7 @@
 }
 
 .buttonSocial {
-  width: 160px;
+  width: 15vw;
   background-color: transparent;
   border-color: #fff;
   border-width: 1px;
@@ -22,13 +23,11 @@
 .socialText {
   color: #fff;
   font-family: 'Space Grotesk';
-  font-size: 1rem;
+  font-size: 1vw;
 }
 
 
-
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .socialContainer {
     text-align: -webkit-center;
     display: grid;
@@ -43,4 +42,10 @@
     place-self: center;
     border-radius: 35px;
   }
+
+
+  .socialText {
+    font-size: 1rem;
+  }
+
 }

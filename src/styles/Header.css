@@ -6,11 +6,10 @@
   height: -webkit-fill-available;
   height: -webkit-fill-available;
   left: 0px;
-  max-width: 33%;
+  max-width: 66%;
   padding: 1rem;
   width: -moz-available;
   width: -webkit-fill-available;
-  width: 500px;
   width: stretch;
 }
 
@@ -42,20 +41,40 @@
   width: 100%;
 }
 
-.active{
+.active {
   background-color: #1400FF;
   border: solid 1px #1400FF;
   color: #fff;
 }
 
-.inactive{
+.inactive {
   background-color: #000;
   color: #fff;
   border: solid 1px #000;
 }
 
-@media screen and (max-width: 600px) {
-  .button-white {
+@media screen and (max-width: 900px) {
+  .header {
+    justify-content: space-between;
+    display: block;
+    width: 100%;
+  }
+  
+  .buttons-right {
     display: none;
+  }
+
+  .title-image {
+    background-color: black;
+    border-radius: 12px;
+    cursor: pointer;
+    left: 0px;
+    height: auto;
+    max-width: 75%;
+    padding: 1rem;
+    width: -webkit-fill-available;
+    width: 500px;
+    width: -moz-available;
+    width: stretch;
   }
 }

@@ -27,11 +27,11 @@ export default function Home() {
           </section>
           <InfinitePhrases />
         </section>
+        <Organizers />
       </section>
-      <Organizers />
       <Quote />
       <Drop />
-      <Social/>
+      <Social />
       <Footer />
     </>
   )

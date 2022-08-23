@@ -60,7 +60,7 @@ export default function Home() {
             footer='Learn More'
           />
           <Databox
-            title='EGER MENTORS'
+            title='EAGER MENTORS'
             body='Infinite features a collection of deeply experienced mentors from throughout the Ethereum ecosystem. Hackers can approach mentors for guidance at any time during the event.'
             footer='Apply as Mentor'
           />

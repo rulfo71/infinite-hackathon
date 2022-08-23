@@ -19,7 +19,7 @@ export default function Header(props) {
     <>
       <section className="header">
         <Link to='/'>
-          <img src={infinite} alt="" className="title-image" />
+          <img src={infinite} alt="infinite" className="title-image" />
         </Link>
         <section className="buttons-right">
           <Link to='/'>
