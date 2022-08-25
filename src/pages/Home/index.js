@@ -31,7 +31,6 @@ export default function Home() {
         </section>
         <Organizers />
       </section>
-      <Quote />
       <Drop />
       <Social />
       <Footer />
