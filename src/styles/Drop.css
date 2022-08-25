@@ -37,7 +37,7 @@
 }
 
 .dropButtons {
-  border: none;
+  border: solid 1px #fff;
   background-color: #fff;
 }
 
