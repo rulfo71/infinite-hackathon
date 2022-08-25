@@ -21,7 +21,7 @@ export default function Home() {
               <span class="black-dot" /> <strong>INAUGURAL EVENT</strong>
             </div>
             <div className='mainText'>
-              Be part of a new kind of hackerthon in Bogotá: <br /> Infinite Genesis
+              Be part of a new kind of hackathon in Bogotá: <br /> Infinite Genesis
             </div>
             <div>
               <Button text='LEARN MORE' classButton='button button-white' img='enter-icon.png' classImg='dot' classText='apply-btn-text' link='/genesis' isLocalRedirect />
