@@ -47,8 +47,9 @@ export default function Home() {
       </section>
 
       <div className='bodyContainer'>
-
-        <Organizers />
+        <a id="organizers">
+          <Organizers />
+        </a>
         <div className='bodyGenesis bodyText uniquePhrase'>
           The most unique take on a “hacker-first” hackathon in Ethereum.
         </div>
@@ -58,17 +59,19 @@ export default function Home() {
             body='Infinite Genesis opted not to seek outside sponsors to minimize distractions and elevate the level of technical experience. Instead, it opted for an aligned co-organization process.'
             footer='Co - Organizers'
             customStyle='databox-left databox column'
+            internalLink='#organizers'
           />
           <Databox
             title='PUBLIC JUDGING'
             body='Judges will be chosen by event organizers; members drawn from involved communities. Both project presentations and judging will be conducted in public featuring real-time results.'
             footer='Learn More'
             customStyle='databox-center databox column'
-            />
+          />
           <Databox
             title='EAGER MENTORS'
             body='Infinite features a collection of deeply experienced mentors from throughout the Ethereum ecosystem. Hackers can approach mentors for guidance at any time during the event.'
             footer='Apply as Mentor'
+            externalLink='https://twitter.com/messages/compose?recipient_id=1544019424382009345'
             customStyle='databox-right databox column'
           />
         </div>
