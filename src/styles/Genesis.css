@@ -2,7 +2,6 @@
   background-image: url('../../public/genesis-background.png');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   min-height: 100vh;
   padding: 20px;
 }
@@ -23,7 +22,6 @@
 
 .bodyContainer {
   display: grid;
-  margin-top: 100px;
 }
 
 .active {
@@ -61,6 +59,10 @@
     justify-content: center;
     display: grid;
     place-items: center;
+  }
+
+  .genesisContainer {
+    background-position: center;
   }
 
   .genesisText {
