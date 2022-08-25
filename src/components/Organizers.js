@@ -13,9 +13,8 @@ export default function Organizers() {
         As an open brand, the organization of infinite events are also, well, infinite
       </div>
       <div className='gridContainer'>
-
         {organizers.map(o => <Organizer key={o.name} logo={o.logo} name={o.name} rol={o.rol} description={o.description} url={o.url} />)}
-        <hr className='divider' class="solid" />
+        <hr className='divider solid' />
       </div>
     </section>
   )
