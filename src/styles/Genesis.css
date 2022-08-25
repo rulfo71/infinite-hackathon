@@ -43,9 +43,8 @@
 
 .dataBoxContainer {
   justify-self: center;
-  width: 60%;
+  width: 65%;
   justify-content: center;
-  display: flex;
 }
 
 .uniquePhrase {

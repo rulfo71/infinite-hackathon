@@ -57,16 +57,19 @@ export default function Home() {
             title='NO NOISE'
             body='Infinite Genesis opted not to seek outside sponsors to minimize distractions and elevate the level of technical experience. Instead, it opted for an aligned co-organization process.'
             footer='Co - Organizers'
+            customStyle='databox-left databox column'
           />
           <Databox
             title='PUBLIC JUDGING'
             body='Judges will be chosen by event organizers; members drawn from involved communities. Both project presentations and judging will be conducted in public featuring real-time results.'
             footer='Learn More'
-          />
+            customStyle='databox-center databox column'
+            />
           <Databox
-            title='EGER MENTORS'
+            title='EAGER MENTORS'
             body='Infinite features a collection of deeply experienced mentors from throughout the Ethereum ecosystem. Hackers can approach mentors for guidance at any time during the event.'
             footer='Apply as Mentor'
+            customStyle='databox-right databox column'
           />
         </div>
         <div className='bodyGenesis bodyText'>

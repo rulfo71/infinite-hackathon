@@ -63,7 +63,7 @@
 @media screen and (max-width: 900px) {
 
   .header{
-    display: table-header-group;
+    display: block;
   }
 
   .buttons-right {
