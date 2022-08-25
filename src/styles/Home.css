@@ -12,17 +12,15 @@
   padding: 20px;
 }
 
-.topText {
-  color: #000;
-  display: inline-block;
+.top-text {
+  margin-bottom: -20px;
   font-size: 1.25vw;
-  margin-bottom: 2px;
-  vertical-align: middle;
 }
 
 .mainText {
   font-size: 5vw;
   text-shadow: 1px 0 #000;
+  font-weight: bolder;
 }
 
 .mainSection {
@@ -49,7 +47,12 @@
     max-width: 85%;
   }
 
-  .topText {
+  .top-text {
     font-size: 0.9rem;
+    margin-bottom: -10px;
+  }
+
+  .bodyHome {
+    display: flow-root;
   }
 }

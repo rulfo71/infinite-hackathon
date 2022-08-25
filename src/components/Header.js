@@ -1,7 +1,7 @@
 
 import { Outlet, Link } from "react-router-dom";
 //assets
-import infinite from '../static/infinite.svg'
+import infinite from '../static/infinite-black-background.png'
 //styles
 import '../styles/Header.css';
 //components
@@ -18,9 +18,11 @@ export default function Header(props) {
   return (
     <>
       <section className="header">
-        <Link to='/'>
-          <img src={infinite} alt="infinite" className="title-image" />
-        </Link>
+        <section className='infinite-logo'>
+          <Link to='/'>
+            <img src={infinite} alt="infinite" className="title-image" />
+          </Link>
+        </section>
         <section className="buttons-right">
           <Link to='/'>
             <div className={isActive('home')}>
@@ -42,7 +44,7 @@ export default function Header(props) {
           />
         </section>
       </section>
-      <Outlet/>
+      <Outlet />
     </>
   )
 }

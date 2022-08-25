@@ -23,7 +23,7 @@ export default function Social() {
         link='https://dxdao.medium.com/dxdao-announces-infinite-a-collection-of-hacker-first-hackathons-f2976b97dfa2'        
         />
         <div className='socialText'>
-          keep up with everything infinite
+          KEEP UP WITH EVERYTHING INFINITE
         </div>
     </section>
   )

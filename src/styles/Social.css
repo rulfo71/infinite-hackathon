@@ -1,10 +1,10 @@
 .socialContainer {
   text-align: -webkit-center;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .socialIcon {
-  width: 20px;
+  width: 1.5vw;
 }
 
 .buttonSocial {
@@ -24,6 +24,7 @@
   color: #fff;
   font-family: 'Space Grotesk';
   font-size: 1vw;
+  font-weight: bold;
 }
 
 
@@ -48,4 +49,8 @@
     font-size: 1rem;
   }
 
+
+  .socialIcon {
+    width: 20px;
+  }
 }
