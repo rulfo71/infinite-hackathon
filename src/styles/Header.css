@@ -6,11 +6,19 @@
   height: -webkit-fill-available;
   height: -webkit-fill-available;
   left: 0px;
-  max-width: 66%;
   padding: 1rem;
   width: -moz-available;
   width: -webkit-fill-available;
   width: stretch;
+}
+
+.infinite-logo {
+  float: left;
+  max-width: 25%;
+}
+
+.buttons-right {
+  float: right;
 }
 
 .button-white {
@@ -36,8 +44,7 @@
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
+  display: flow-root;
   width: 100%;
 }
 
@@ -54,12 +61,11 @@
 }
 
 @media screen and (max-width: 900px) {
-  .header {
-    justify-content: space-between;
-    display: block;
-    width: 100%;
+
+  .header{
+    display: table-header-group;
   }
-  
+
   .buttons-right {
     display: none;
   }
@@ -70,11 +76,13 @@
     cursor: pointer;
     left: 0px;
     height: auto;
-    max-width: 75%;
     padding: 1rem;
     width: -webkit-fill-available;
-    width: 500px;
     width: -moz-available;
     width: stretch;
+  }
+
+  .infinite-logo {
+    max-width: 50%;
   }
 }

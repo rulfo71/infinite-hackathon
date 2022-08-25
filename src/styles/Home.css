@@ -52,4 +52,8 @@
   .topText {
     font-size: 0.9rem;
   }
+
+  .bodyHome {
+    display: flow-root;
+  }
 }
