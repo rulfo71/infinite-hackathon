@@ -2,7 +2,7 @@ import '../../styles/Databox.css';
 
 export default function Databox(props) {
 
-  const { title, body, footer, customStyle, externalLink, internalLink } = props
+  const { title, body, footer, customStyle, externalLink, internalRef } = props
 
   return (
     <div className={customStyle}>
@@ -20,12 +20,11 @@ export default function Databox(props) {
             {footer}
           </a>
           :
-          internalLink ?
+          internalRef ?
             <div
               style={{ "cursor": "pointer" }}
               onClick={() => {
-                const anchor = document.querySelector(internalLink)
-                anchor.scrollIntoView({ behavior: 'smooth', block: 'center' })
+                internalRef.current.scrollIntoView({ behavior: 'smooth'});
               }}
             >
               {footer}
