@@ -13,27 +13,31 @@ export default function Databox(props) {
       <div className='dataBoxBody'>
         {body}
       </div>
-      <hr className='solid' />
-      {
-        externalLink ?
-          <a className='linkFooter' href={externalLink} target="_blank" rel='noreferrer'>
-            {footer}
-          </a>
-          :
-          internalRef ?
-            <div
-              style={{ "cursor": "pointer" }}
-              onClick={() => {
-                internalRef.current.scrollIntoView({ behavior: 'smooth'});
-              }}
-            >
-              {footer}
-            </div>
-            :
-            <div className='dataBoxFooter'>
-              {footer}
-            </div>
-      }
+      {footer.length > 0 && (
+        <div>
+          <hr className='solid' />
+          {
+            externalLink ?
+              <a className='linkFooter' href={externalLink} target="_blank" rel='noreferrer'>
+                {footer}
+              </a>
+              :
+              internalRef ?
+                <div
+                  style={{ "cursor": "pointer" }}
+                  onClick={() => {
+                    internalRef.current.scrollIntoView({ behavior: 'smooth'});
+                  }}
+                >
+                  {footer}
+                </div>
+                :
+                <div className='dataBoxFooter'>
+                  {footer}
+                </div>
+          }
+        </div>
+      )}
     </div>
   )
 }
