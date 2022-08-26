@@ -44,6 +44,14 @@
   width: auto;
 }
 
+.taikai-logo {
+  height: 20px;
+  margin-right: 5px;
+  padding: 0px 5px;
+  vertical-align: sub;
+  width: auto;
+}
+
 .brand {
   font-size: 2vw;
   display: flex;
