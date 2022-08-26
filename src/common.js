@@ -46,6 +46,12 @@ export const organizers = [
     rol: 'GENESIS CO-ORGANIZER',
     description:'AUTOMATION AFICIANDOS',
     url: 'https://brink.trade/'
+  },  {
+    logo: 'kleros.png',
+    name: 'KLEROS',
+    rol: 'GENESIS CO-ORGANIZER',
+    description:'JUSTICE ARBITRATORS',
+    url: 'https://kleros.io/'
   },
   {
     logo: 'join.png',
