@@ -2,7 +2,7 @@
   background-color: transparent;
   color: #fff;
   font-family: 'Space Grotesk';
-  font-size: 1.5rem;
+  font-size: 2vw;
 }
 
 .itemFaqContainer {
@@ -20,6 +20,7 @@
   height: auto;
   transition: opacity 2s;
   margin-bottom: 10px;
+  font-size: 1.5vw;
 }
 
 .answerHidden {
@@ -28,4 +29,14 @@
   height: 0;
   overflow: hidden;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .faqQuestion {
+    font-size: 1.5rem;
+  }
+
+  .answerShown {
+    font-size: 1rem;
+  }
 }

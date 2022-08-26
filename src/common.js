@@ -30,24 +30,34 @@ export const organizers = [
     logo: 'dxdao.png',
     name: 'DXDAO',
     rol: 'INFINIT INITIATOR',
-    description:'DECENTRALIZATION SUPER SOLDIER'
+    description:'DECENTRALIZATION SUPER SOLDIER',
+    url: 'https://dxdao.eth.limo/'
   },
   {
     logo: 'hopr.png',
     name: 'HOPR',
     rol: 'GENESIS CO-ORGANIZER',
-    description:'PRIVACY PIONEERS'
+    description:'PRIVACY PIONEERS',
+    url: 'https://hoprnet.org/'
   },
   {
     logo: 'brink.png',
     name: 'BRINK',
     rol: 'GENESIS CO-ORGANIZER',
-    description:'AUTOMATION AFICIANDOS'
+    description:'AUTOMATION AFICIANDOS',
+    url: 'https://brink.trade/'
+  },  {
+    logo: 'kleros.png',
+    name: 'KLEROS',
+    rol: 'GENESIS CO-ORGANIZER',
+    description:'JUSTICE ARBITRATORS',
+    url: 'https://kleros.io/'
   },
   {
     logo: 'join.png',
     name: 'JOIN US',
     rol: 'BECOME AN ORGANIZER',
+    url: 'https://twitter.com/messages/compose?recipient_id=1544019424382009345'
   },
 
 ]

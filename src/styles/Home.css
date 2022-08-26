@@ -12,20 +12,19 @@
   padding: 20px;
 }
 
-.topText {
-  color: #000;
-  display: inline-block;
-  font-size: 0.7rem;
-  margin-bottom: 2px;
-  vertical-align: middle;
+.top-text {
+  margin-bottom: -20px;
+  font-size: 1.25vw;
 }
 
 .mainText {
-  font-size: 3rem;
+  font-size: 5vw;
+  text-shadow: 1px 0 #000;
+  font-weight: bolder;
 }
 
 .mainSection {
-  max-width: 60%;
+  max-width: 65%;
 }
 
 .black-dot {
@@ -39,17 +38,21 @@
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .mainText {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
-  .homeContainer {
-    background-image: url('../../public/background.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 20px;
-    min-height: 70vh;
+  .mainSection {
+    max-width: 85%;
+  }
+
+  .top-text {
+    font-size: 0.9rem;
+    margin-bottom: -10px;
+  }
+
+  .bodyHome {
+    display: flow-root;
   }
 }

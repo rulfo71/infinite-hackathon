@@ -1,5 +1,5 @@
 .InfinitePhrasesContainer {
-  color: #fff;
+  color: #000;
   flex-direction: column;
   margin-top: 100px;
 }
@@ -9,5 +9,12 @@
   mask-image: linear-gradient(to bottom, black 20%, transparent 100%);
   display: flex;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 2.5vw;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 900px) {
+  .fade {
+    font-size: 1.5rem;
+  }
 }

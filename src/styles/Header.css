@@ -6,12 +6,19 @@
   height: -webkit-fill-available;
   height: -webkit-fill-available;
   left: 0px;
-  max-width: 33%;
   padding: 1rem;
   width: -moz-available;
   width: -webkit-fill-available;
-  width: 500px;
   width: stretch;
+}
+
+.infinite-logo {
+  float: left;
+  max-width: 25%;
+}
+
+.buttons-right {
+  float: right;
 }
 
 .button-white {
@@ -37,25 +44,45 @@
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
+  display: flow-root;
   width: 100%;
 }
 
-.active{
+.active {
   background-color: #1400FF;
   border: solid 1px #1400FF;
   color: #fff;
 }
 
-.inactive{
+.inactive {
   background-color: #000;
   color: #fff;
   border: solid 1px #000;
 }
 
-@media screen and (max-width: 600px) {
-  .button-white {
+@media screen and (max-width: 900px) {
+
+  .header{
+    display: block;
+  }
+
+  .buttons-right {
     display: none;
+  }
+
+  .title-image {
+    background-color: black;
+    border-radius: 12px;
+    cursor: pointer;
+    left: 0px;
+    height: auto;
+    padding: 1rem;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    width: stretch;
+  }
+
+  .infinite-logo {
+    max-width: 50%;
   }
 }

@@ -4,3 +4,9 @@
   margin-top: 50px;
   place-self: center;
 }
+
+@media screen and (max-width: 900px) {
+  .faq {
+    max-width: 70%;
+  }
+}
