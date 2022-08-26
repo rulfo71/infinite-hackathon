@@ -1,7 +1,7 @@
 export const faqs = [
   {
     question: 'Are hackathon entries unlimited?',
-    answer: 'No. Infinite aims to give all participants every comfort needed while they are hacking. This includes sufficient guidance from experienced mentors and organizers. For that reason the hackathon is limited to 150 individual hackers.'
+    answer: 'No. Infinite aims to give all participants every comfort needed while they are hacking. This includes sufficient guidance from experienced mentors and organizers. For that reason the hackathon is limited to 100 individual hackers.'
   },
   {
     question: 'How are entrants chosen?',
@@ -29,7 +29,7 @@ export const organizers = [
   {
     logo: 'dxdao.png',
     name: 'DXDAO',
-    rol: 'INFINIT INITIATOR',
+    rol: 'INFINITE INITIATOR',
     description:'DECENTRALIZATION SUPER SOLDIER',
     url: 'https://dxdao.eth.limo/'
   },
@@ -44,7 +44,7 @@ export const organizers = [
     logo: 'brink.png',
     name: 'BRINK',
     rol: 'GENESIS CO-ORGANIZER',
-    description:'AUTOMATION AFICIANDOS',
+    description:'AUTOMATION AFICIONADOS',
     url: 'https://brink.trade/'
   },  {
     logo: 'kleros.png',

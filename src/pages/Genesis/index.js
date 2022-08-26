@@ -42,7 +42,7 @@ export default function Genesis() {
             <strong> Welcome to the inaguration of Infinite. </strong>
             <br />
             <br />
-            In this celebratory iniatiation of Infinite, hackers from far and wide will congregate around the beautiful city of Bogotá, Columbia to collaborate, build, and prepare for the coming events at Devcon VI.
+            In this celebratory iniatiation of Infinite, hackers from far and wide will congregate around the beautiful city of Bogotá, Colombia to collaborate, build, and prepare for the coming events at Devcon VI.
             <br />
             <br />
             Infinite arose from an innate desire to provide the industry with a special type of hackathon - a more intimate experience where builders can come to learn with minimal interruptions. Hackers will be able to unleash their innovative and creative energy while avoiding distractions, inefficiencies, and other unnecessary fuss.
@@ -68,7 +68,7 @@ export default function Genesis() {
             <Databox
               title='PUBLIC JUDGING'
               body='Judges will be chosen by event organizers; members drawn from involved communities. Both project presentations and judging will be conducted in public featuring real-time results.'
-              footer='Learn More'
+              footer=''
               customStyle='databox-center databox column'
             />
             <Databox
