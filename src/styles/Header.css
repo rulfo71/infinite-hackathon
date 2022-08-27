@@ -77,7 +77,7 @@
     left: 0px;
     height: auto;
     padding: 1rem;
-    width: -webkit-fill-available;
+    width: 100%;
     width: -moz-available;
     width: stretch;
   }
