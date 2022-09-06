@@ -23,6 +23,9 @@ export default function Home() {
             <div className='mainText'>
               Be part of a new kind of hackathon in Bogotá: <br /> Infinite Genesis
             </div>
+            <div className='date-field'>
+              <strong>7-9 of October 2022</strong>
+            </div>
             <div>
               <Button text='LEARN MORE' classButton='button button-white' img='enter-icon.png' classImg='dot' classText='apply-btn-text' link='/genesis' isLocalRedirect />
             </div>

@@ -25,6 +25,9 @@ export default function Genesis() {
             Introducing Infinite Genesis in Bogotá
           </strong>
         </div>
+        <div className='date-field'>
+          <strong>7-9 of October 2022</strong>
+        </div>
         <Button
           text='APPLY TO HACK'
           img='enter-icon.png'
