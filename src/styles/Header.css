@@ -3,13 +3,10 @@
   border-radius: 12px;
   cursor: pointer;
   height: -moz-available;
-  height: -webkit-fill-available;
-  height: -webkit-fill-available;
   left: 0px;
   padding: 1rem;
   width: -moz-available;
-  width: -webkit-fill-available;
-  width: stretch;
+  width: 100%;
 }
 
 .infinite-logo {
@@ -61,25 +58,12 @@
 }
 
 @media screen and (max-width: 900px) {
-
   .header{
     display: block;
   }
 
   .buttons-right {
     display: none;
-  }
-
-  .title-image {
-    background-color: black;
-    border-radius: 12px;
-    cursor: pointer;
-    left: 0px;
-    height: auto;
-    padding: 1rem;
-    width: -webkit-fill-available;
-    width: -moz-available;
-    width: stretch;
   }
 
   .infinite-logo {

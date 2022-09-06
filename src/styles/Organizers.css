@@ -74,7 +74,12 @@
   align-items: center;
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+.platform-provider {
+  justify-content: center;
+}
+
+
+/* Responsive layout - when the screen is less than 900px wide, make the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 900px) {
   .column {
     width: 100%;
@@ -111,6 +116,11 @@
 
   .row {
     display: block;
+  }
+  
+  .platform-provider {
+    max-width: 75%;
+    align-self: center;
   }
   
 }

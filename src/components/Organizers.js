@@ -16,7 +16,7 @@ export default function Organizers() {
         {organizers.map(o => <Organizer key={o.name} logo={o.logo} name={o.name} rol={o.rol} description={o.description} url={o.url} />)}
         <hr className='divider solid' />
       </div>
-      <div className='row' style={{justifyContent: 'center'}}>
+      <div className='row platform-provider'>
         <a href="https://taikai.network/" target="_blank" rel='noreferrer'>
           <img src='taikai.png' alt='taikai' className="taikai-logo" />
         </a>
