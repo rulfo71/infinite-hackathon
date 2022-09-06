@@ -16,11 +16,10 @@
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%;  
+  width: 100%;
   height: auto;
   min-height: 110vh;
 }
-
 
 .genesisText {
   color: #fff;
@@ -31,7 +30,7 @@
 
 .bodyGenesis {
   justify-self: center;
-  max-width: 60%;
+  max-width: 70%;
   height: auto;
 }
 
@@ -48,12 +47,16 @@
   margin-top: 100px;
 }
 
-
 .bodyText {
   color: #fff;
-  margin-top: 50px;
-  width: 50%;
-  font-size: 1.5vw;
+  margin-top: 100px;
+  width: 65%;
+  font-size: 2.5vw;
+}
+
+.bodyParagraphs {
+  margin-top: 150px;
+  font-size: 2vw;
 }
 
 .dataBoxContainer {
@@ -88,6 +91,11 @@
     width: auto;
   }
 
+  .bodyParagraphs {
+    font-size: 1rem;
+    margin-top: 50px;
+  }
+
   .uniquePhrase {
     font-size: 1.5rem;
   }
@@ -98,7 +106,6 @@
   }
 
   .bodyGenesis {
-    max-width: 70%;
+    max-width: 80%;
   }
-
 }
