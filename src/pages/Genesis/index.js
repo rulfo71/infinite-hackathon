@@ -1,3 +1,5 @@
+//genesis index.js
+
 // styles
 import '../../styles/Genesis.css'
 // components
@@ -10,14 +12,35 @@ import Drop from '../../components/Drop';
 import Social from '../../components/Social';
 import Footer from '../../components/Footer';
 import bogota from '../../static/bogota.png'
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 
 export default function Genesis() {
 
   const organizersRef = useRef()
+  const dropRef = useRef()
+  
+  const [scrollPosition, setScrollPosition] = useState(0);
+  let backgroundImgPosition = `${scrollPosition}px`
+  let dropPosition = dropRef?.current?.offsetTop
+  let opacityBackground = 1.1 - scrollPosition / dropPosition
+  let displayBackground = scrollPosition > dropPosition? 'none' : 'block'
+
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrollPosition]);
 
   return (
     <>
+      <div className='background-image' style={{top: `${backgroundImgPosition}`, opacity: `${opacityBackground}`, display: `${displayBackground}` }}></div>
       <section className='genesisContainer'>
         <Header active='genesis' />
         <div className='genesisText'>
@@ -48,7 +71,6 @@ export default function Genesis() {
             Infinite arose from an innate desire to provide the industry with a special type of hackathon - a more intimate experience where builders can come to learn with minimal interruptions. Hackers will be able to unleash their innovative and creative energy while avoiding distractions, inefficiencies, and other unnecessary fuss.
           </div>
         </div>
-      </section>
 
         <div className='bodyContainer'>
           <div ref={organizersRef}>
@@ -93,10 +115,13 @@ export default function Genesis() {
             Infinite will award a variety of interesting rewards to hackers, including medals, NFTs and crypto. Organizers will be hosting their own bounties alongside this.
           </div>
           <Faq />
-          <Drop />
+          <div ref={dropRef}>
+            <Drop />
+          </div>
           <Social />
           <Footer />
         </div>
+      </section>
     </>
   )
 }
