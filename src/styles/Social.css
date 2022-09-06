@@ -4,15 +4,15 @@
 }
 
 .socialIcon {
-  width: 1.5vw;
+  padding: 15px;
 }
 
 .buttonSocial {
-  width: 15vw;
+  width: 25rem;
   background-color: transparent;
   border-color: #fff;
   border-width: 1px;
-  border-radius: 35px;
+  border-radius: 65px;
 }
 
 .buttonSocialMiddle {
@@ -52,5 +52,6 @@
 
   .socialIcon {
     width: 20px;
+    padding: 0px;
   }
 }

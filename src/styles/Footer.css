@@ -1,10 +1,11 @@
 .footerContainer{
   display: flex;
   margin-top: 100px;
-  padding-bottom: 50px;
   place-content: center;
+  padding-bottom: 5px;
+
 }
 
 .imgFooter {
-  width: 80%;  
+  width: 98%;  
 }
