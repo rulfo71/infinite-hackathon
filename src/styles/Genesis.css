@@ -61,12 +61,12 @@
 
 .dataBoxContainer {
   justify-self: center;
-  width: 65%;
   justify-content: center;
 }
 
 .uniquePhrase {
   font-size: 2.5vw;
+  width: 53%;
 }
 
 @media screen and (max-width: 900px) {
