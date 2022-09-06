@@ -22,7 +22,7 @@ export default function Genesis() {
   const [scrollPosition, setScrollPosition] = useState(0)
   let backgroundImgPosition = `${scrollPosition}px`
   let dropPosition = dropRef?.current?.offsetTop
-  let opacityBackground = 1.1 - scrollPosition / dropPosition
+  let opacityBackground = 1 - scrollPosition / dropPosition
   let displayBackground = scrollPosition > dropPosition ? 'none' : 'block'
 
   const handleScroll = () => {
@@ -139,8 +139,6 @@ export default function Genesis() {
           <div ref={dropRef}>
             <Drop />
           </div>
-          <Social />
-          <Footer />
         </div>
       </section>
     </>

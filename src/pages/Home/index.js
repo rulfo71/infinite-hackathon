@@ -30,9 +30,7 @@ export default function Home() {
         </section>
         <Organizers />
       </section>
-      <Drop />
-      <Social />
-      <Footer />
+      <Drop />      
     </>
   )
 }

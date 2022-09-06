@@ -4,6 +4,7 @@
   background-position-x: center;
   background-repeat: no-repeat;
   background-size: contain;
+  background-attachment: fixed;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -16,7 +17,7 @@
 
 .dropText {
   font-size: 4vw;
-  max-width: 25%;
+  max-width: 30%;
   line-height: 4vw;
   text-align: -webkit-center;
   font-weight: bolder;
@@ -27,12 +28,12 @@
 .buttonsContainer {
   align-self: center;
   padding-top: 10px;
-  padding-bottom: 35px;
+  padding-bottom: 100px;
   text-align: -webkit-center;
 }
 
 .imgBody {
-  width: 200px;
+  width: 240px;
   margin-top: 60px;
 }
 
@@ -52,14 +53,15 @@
   }
 
   .dropText {
-    font-size: 2rem;
-    max-width: 50%;
-    line-height: 40px;
+    font-size: 3rem;
+    line-height: 50px;
+    max-width: 70%;
     text-align: -webkit-center;
+    margin-top: 40px;
   }
 
   .imgBody {
-    width: 100px;
+    width: 150px;
     margin-top: 10px;
   }
 }
