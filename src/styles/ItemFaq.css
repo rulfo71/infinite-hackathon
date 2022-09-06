@@ -2,7 +2,10 @@
   background-color: transparent;
   color: #fff;
   font-family: 'Space Grotesk';
-  font-size: 2vw;
+  font-size: 1.5vw;
+  height: 7vw;
+  display: flex;
+  align-items: center;
 }
 
 .itemFaqContainer {
@@ -20,7 +23,7 @@
   height: auto;
   transition: opacity 2s;
   margin-bottom: 10px;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
 }
 
 .answerHidden {
