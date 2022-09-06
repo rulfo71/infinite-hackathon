@@ -136,11 +136,11 @@ export default function Genesis() {
             own bounties alongside this.
           </div>
           <Faq />
-          <div ref={dropRef}>
-            <Drop />
-          </div>
         </div>
       </section>
+        <div ref={dropRef}>
+          <Drop />
+        </div>
     </>
   )
 }
