@@ -37,6 +37,7 @@
 @media screen and (max-width: 900px) {
   .faqQuestion {
     font-size: 1.5rem;
+    height: auto;
   }
 
   .answerShown {
