@@ -55,4 +55,9 @@
     width: 20px;
     padding: 0px;
   }
+
+  .buttonSocialMiddle {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
