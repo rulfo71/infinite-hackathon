@@ -1,0 +1,46 @@
+.InfinitePhrasesContainer {
+  color: #000;
+  flex-direction: column;
+  margin: auto;
+  width: 55%;
+  font-size: 2.5vw;
+  font-weight: 700;
+  width: 50%;
+  font-size: 2vw;
+}
+
+.infinitePhrase {
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+}
+
+.infinitePhrase-active{
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+  opacity: 1;
+}
+
+.fade {
+  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 20%, transparent 100%);
+  display: flex;
+  justify-content: center;
+
+}
+
+@media screen and (max-width: 900px) {
+  .InfinitePhrasesContainer {
+    font-size: 1.5rem;
+    width: 90%;
+  }
+  
+  .infinitePhrase {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .infinitePhrase-active{
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}

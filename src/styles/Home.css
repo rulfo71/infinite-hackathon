@@ -1,0 +1,69 @@
+.bodyHome {
+  padding-top: 50px;
+  width: 100%;
+}
+
+.homeContainer {
+  background-image: url('../../public/background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  padding:  50px;
+}
+
+.top-text {
+  margin-bottom: -20px;
+  font-size: 1.25vw;
+}
+
+.mainText {
+  font-size: 5vw;
+  text-shadow: 1px 0 #000;
+  font-weight: bolder;
+  line-height: 7vw;
+}
+
+.mainSection {
+  max-width: 65%;
+}
+
+.black-dot {
+  height: 9px;
+  width: 9px;
+  background-color: #000;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 2px;
+}
+
+
+@media screen and (max-width: 900px) {
+  .mainText {
+    font-size: 2.5rem;
+    line-height: normal;
+  }
+
+  .homeContainer {
+    background-image: url('../../public/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  .mainSection {
+    max-width: 85%;
+  }
+
+  .top-text {
+    font-size: 0.9rem;
+    margin-bottom: -10px;
+  }
+
+  .bodyHome {
+    display: flow-root;
+  }
+}

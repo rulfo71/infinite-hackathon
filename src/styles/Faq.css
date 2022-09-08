@@ -1,0 +1,13 @@
+.faq {
+  max-width: 50%;
+  color: #fff;
+  margin-top: 100px;
+  place-self: center;
+  
+}
+
+@media screen and (max-width: 900px) {
+  .faq {
+    max-width: 70%;
+  }
+}

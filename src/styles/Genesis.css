@@ -1,0 +1,111 @@
+.genesisContainer {
+  /* background-image: url('../static/genesis-background-square.png');
+  background-repeat: no-repeat;
+  background-size: cover; */
+  min-height: 100vh;
+  padding: 50px;
+  position: relative;
+}
+
+.background-image {
+  background-image: url('../static/genesis-background-square.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  min-height: 110vh;
+}
+
+.genesisText {
+  color: #fff;
+  font-size: 5vw;
+  width: 60%;
+  margin-top: 100px;
+}
+
+.bodyGenesis {
+  justify-self: center;
+  max-width: 70%;
+  height: auto;
+}
+
+.bodyContainer {
+  display: grid;
+}
+
+.active {
+  background-color: blue;
+}
+
+.imgContainer {
+  display: grid;
+  margin-top: 100px;
+}
+
+.bodyText {
+  color: #fff;
+  margin-top: 100px;
+  width: 65%;
+  font-size: 2.5vw;
+}
+
+.bodyParagraphs {
+  margin-top: 150px;
+  font-size: 2vw;
+}
+
+.dataBoxContainer {
+  justify-self: center;
+  justify-content: center;
+}
+
+.uniquePhrase {
+  font-size: 2.5vw;
+  width: 53%;
+}
+
+@media screen and (max-width: 900px) {
+  .dataBoxContainer {
+    justify-self: center;
+    width: 100%;
+    justify-content: center;
+    display: grid;
+    place-items: center;
+  }
+
+  .genesisContainer {
+    background-position: center;
+  }
+
+  .genesisText {
+    font-size: 3rem;
+  }
+
+  .bodyText {
+    font-size: 1.3rem;
+    width: auto;
+  }
+
+  .bodyParagraphs {
+    font-size: 1rem;
+    margin-top: 50px;
+  }
+
+  .uniquePhrase {
+    font-size: 1.5rem;
+  }
+
+  .bodyContainer {
+    display: grid;
+    margin-top: 0px;
+  }
+
+  .bodyGenesis {
+    max-width: 80%;
+  }
+}

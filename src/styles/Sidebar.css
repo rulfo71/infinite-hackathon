@@ -1,0 +1,141 @@
+/* Position and sizing of burger button */
+.bm-burger-button {
+  display: none;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 50px !important;
+  width: 50px !important;
+  top: 20px !important;
+  right: 20px !important;
+  cursor: pointer;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #000;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+  width: 100%
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+  display: flex;
+  place-content: center;
+  flex-direction: column;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+
+  color: #d1d1d1;
+  margin-bottom: 10px;
+  text-align: left;
+  align-self: center;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.menu-item {
+  font-size: 3rem;
+}
+
+.bm-item:hover {
+  color: #ffffff;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.dotburger {
+  background-color: #FFF;
+  border-radius: 50%;
+  display: inline-block;
+  height: 15px;
+  margin-bottom: 2px;
+  vertical-align: middle;
+  width: 15px;
+}
+
+.footerBurger {
+  position: absolute;
+  bottom: 10px;
+  display: grid !important;
+}
+
+.headerBurger {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 75%;
+}
+
+.bodyBurger {
+  display: grid !important;
+}
+
+.infinite-image-sidebar {
+    max-width: 80%;
+    padding: 1rem;
+}
+
+.buttons-footer-sidebar {
+  background-color: #fff;
+  text-align: center;
+  border-radius: 40px;
+  border: solid 1px #fff;
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 900px) {
+  .bm-burger-button {
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    top: 20px;
+    float: right;
+  }
+
+  .imgBurgerButton {
+    border-radius: 10px;
+  }
+
+}

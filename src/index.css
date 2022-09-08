@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  font-family: 'Space Grotesk';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.date-field {
+  background-color: #fff;
+  border-radius: 40px;
+  border: solid 1px #fff;
+  left: 10px;
+  width: fit-content;
+  padding: 15px;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
