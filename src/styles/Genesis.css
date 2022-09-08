@@ -1,11 +1,25 @@
 .genesisContainer {
-  background-image: url('../../public/genesis-background.png');
+  /* background-image: url('../static/genesis-background-square.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   min-height: 100vh;
-  padding: 20px;
+  padding: 50px;
+  position: relative;
 }
 
+.background-image {
+  background-image: url('../static/genesis-background-square.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  min-height: 110vh;
+}
 
 .genesisText {
   color: #fff;
@@ -16,7 +30,7 @@
 
 .bodyGenesis {
   justify-self: center;
-  max-width: 60%;
+  max-width: 70%;
   height: auto;
 }
 
@@ -33,22 +47,26 @@
   margin-top: 100px;
 }
 
-
 .bodyText {
   color: #fff;
-  margin-top: 50px;
-  width: 50%;
-  font-size: 1.5vw;
+  margin-top: 100px;
+  width: 65%;
+  font-size: 2.5vw;
+}
+
+.bodyParagraphs {
+  margin-top: 150px;
+  font-size: 2vw;
 }
 
 .dataBoxContainer {
   justify-self: center;
-  width: 65%;
   justify-content: center;
 }
 
 .uniquePhrase {
   font-size: 2.5vw;
+  width: 53%;
 }
 
 @media screen and (max-width: 900px) {
@@ -73,6 +91,11 @@
     width: auto;
   }
 
+  .bodyParagraphs {
+    font-size: 1rem;
+    margin-top: 50px;
+  }
+
   .uniquePhrase {
     font-size: 1.5rem;
   }
@@ -83,7 +106,6 @@
   }
 
   .bodyGenesis {
-    max-width: 70%;
+    max-width: 80%;
   }
-
 }

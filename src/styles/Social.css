@@ -1,18 +1,19 @@
 .socialContainer {
   text-align: -webkit-center;
-  margin-top: 50px;
+  margin-top: 75px;
 }
 
 .socialIcon {
-  width: 1.5vw;
+  padding: 15px;
 }
 
 .buttonSocial {
-  width: 15vw;
+  width: 20rem;
   background-color: transparent;
   border-color: #fff;
   border-width: 1px;
-  border-radius: 35px;
+  border-radius: 65px;
+  padding: 10px;
 }
 
 .buttonSocialMiddle {
@@ -52,5 +53,11 @@
 
   .socialIcon {
     width: 20px;
+    padding: 0px;
+  }
+
+  .buttonSocialMiddle {
+    margin-left: auto;
+    margin-right: auto;
   }
 }

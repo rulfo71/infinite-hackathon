@@ -10,7 +10,7 @@ export default function Organizer(props) {
           <img src={`${logo}`} alt={name} className="logo" />
           {name}
         </a>
-        <div className='column extras'>
+        <div className='column role'>
           <strong> {rol} </strong>
         </div>
         <div className='column extras'>

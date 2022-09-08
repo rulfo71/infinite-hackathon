@@ -10,7 +10,7 @@ import '../styles/Sidebar.css';
 import Button from './Button';
 import infinite from '../static/infinite-white-background.png'
 import cross from '../static/cross.png'
-import burger from '../static/burger-button.png'
+import burger from '../static/burger-button2.png'
 
 
 

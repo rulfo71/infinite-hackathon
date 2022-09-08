@@ -1,5 +1,6 @@
 .organizers {
   align-content: center;
+  align-items: center;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -9,8 +10,9 @@
 
 .title {
   display: flex;
-  font-size: 4vw;
   justify-content: center;
+  font-weight: bolder;
+  font-size: 7vw;
 }
 
 .divider {
@@ -37,7 +39,7 @@
 }
 
 .logo {
-  height: 35px;
+  height: 70px;
   margin-right: 5px;
   padding: 0px 5px;
   vertical-align: sub;
@@ -60,24 +62,32 @@
 }
 
 .extras {
+  font-size: 1vw;
+  margin-top: 10px;
+}
+
+
+.role {
   font-size: 1.5vw;
   margin-top: 10px;
 }
 
+
 .gridContainer {
-  display: grid;
+  display: block;
   justify-content: center;
+  width: 60%;
 }
 
 .row {
   display: flex;
   align-items: center;
+  height: 8rem;
 }
 
 .platform-provider {
   justify-content: center;
 }
-
 
 /* Responsive layout - when the screen is less than 900px wide, make the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 900px) {
@@ -92,10 +102,13 @@
     text-align: center;
   }
 
-  .title {
-    font-size: 3rem;
+  .logo {
+    height: 40px;
   }
 
+  .title {
+    font-size: 4rem;
+  }
 
   .divider {
     margin: 20px 50px;
@@ -110,17 +123,20 @@
     text-align: center;
   }
 
+  .role {
+    font-size: 1.5rem;
+  }
   .extras {
     font-size: 1rem;
   }
 
   .row {
     display: block;
+    height: auto;
   }
-  
+
   .platform-provider {
     max-width: 75%;
     align-self: center;
   }
-  
 }

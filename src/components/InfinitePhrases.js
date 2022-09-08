@@ -1,14 +1,13 @@
-import '../styles/InfinitePhrases.css';
+import { infinitePhrases } from '../common'
+import '../styles/InfinitePhrases.css'
+import InfinitePhrase from './InfinitePhrase'
 
 export default function InfinitePhrases() {
   return (
     <section className='InfinitePhrasesContainer'>
-      <div className='fade'>
-        INFINITE is by hackers for hackers <br />
-        INFINITE is decentralized <br />
-        INFINITE reimagines traditional hackathons<br />
-        INFINITE is a unique "hacker-first" event <br />
-      </div>
+      {infinitePhrases.map((i) => (
+        <InfinitePhrase key={i.name} phrase={i.text} />
+      ))}
     </section>
   )
 }
