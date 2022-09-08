@@ -7,8 +7,6 @@ export default function InfinitePhrase(props) {
   const scrollPosition = useScrollPosition()
   const ref = useRef()
 
-  console.log(scrollPosition)
-
   const positionOfElementInTheMiddle =
     ref.current?.offsetTop -
     window.innerHeight / 2 +
