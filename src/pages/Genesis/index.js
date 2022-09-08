@@ -11,30 +11,18 @@ import Faq from '../../components/genesis/FAQ'
 import Drop from '../../components/Drop'
 import bogota from '../../static/bogota.png'
 import collage from '../../static/collage.png'
-import { useRef, useState, useEffect } from 'react'
+import { useRef } from 'react'
+import useScrollPosition from '../../hooks/useScrollPosition'
 
 export default function Genesis() {
   const organizersRef = useRef()
   const dropRef = useRef()
 
-  const [scrollPosition, setScrollPosition] = useState(0)
+  const scrollPosition = useScrollPosition();
   let backgroundImgPosition = `${scrollPosition}px`
   let dropPosition = dropRef?.current?.offsetTop
   let opacityBackground = 1 - scrollPosition / dropPosition
   let displayBackground = scrollPosition > dropPosition ? 'none' : 'block'
-
-  const handleScroll = () => {
-    const position = window.pageYOffset
-    setScrollPosition(position)
-  }
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll)
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [scrollPosition])
 
   return (
     <>
