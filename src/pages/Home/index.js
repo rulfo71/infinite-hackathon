@@ -3,12 +3,9 @@ import '../../styles/Home.css';
 // components
 import Organizers from '../../components/Organizers';
 import InfinitePhrases from '../../components/InfinitePhrases';
-import Quote from '../../components/Quote';
 import Drop from '../../components/Drop';
-import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import Button from '../../components/Button';
-import Social from '../../components/Social';
 
 export default function Home() {
   return (
@@ -34,9 +31,7 @@ export default function Home() {
         </section>
         <Organizers />
       </section>
-      <Drop />
-      <Social />
-      <Footer />
+      <Drop />      
     </>
   )
 }

@@ -9,7 +9,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
-  padding: 20px;
+  padding:  50px;
 }
 
 .top-text {
@@ -21,6 +21,7 @@
   font-size: 5vw;
   text-shadow: 1px 0 #000;
   font-weight: bolder;
+  line-height: 7vw;
 }
 
 .mainSection {
@@ -41,6 +42,16 @@
 @media screen and (max-width: 900px) {
   .mainText {
     font-size: 2.5rem;
+    line-height: normal;
+  }
+
+  .homeContainer {
+    background-image: url('../../public/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 20px;
   }
 
   .mainSection {

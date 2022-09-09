@@ -1,29 +1,46 @@
+//genesis index.js
+
 // styles
 import '../../styles/Genesis.css'
 // components
-import Button from '../../components/Button';
-import Header from '../../components/Header';
-import Organizers from '../../components/Organizers';
-import Databox from '../../components/genesis/Databox';
-import Faq from '../../components/genesis/FAQ';
-import Drop from '../../components/Drop';
-import Social from '../../components/Social';
-import Footer from '../../components/Footer';
+import Button from '../../components/Button'
+import Header from '../../components/Header'
+import Organizers from '../../components/Organizers'
+import Databox from '../../components/genesis/Databox'
+import Faq from '../../components/genesis/FAQ'
+import Drop from '../../components/Drop'
 import bogota from '../../static/bogota.png'
-import { useRef } from 'react';
+import collage from '../../static/collage.png'
+import { useRef } from 'react'
+import useScrollPosition from '../../hooks/useScrollPosition'
 
 export default function Genesis() {
-
   const organizersRef = useRef()
+  const dropRef = useRef()
+
+  const scrollPosition = useScrollPosition();
+  let backgroundImgPosition = `${scrollPosition}px`
+  let dropPosition = dropRef?.current?.offsetTop
+  let opacityBackground = 1 - scrollPosition / dropPosition
+  let displayBackground = scrollPosition > dropPosition ? 'none' : 'block'
 
   return (
     <>
+      <div
+        className='background-image'
+        style={{
+          top: `${backgroundImgPosition}`,
+          opacity: `${opacityBackground}`,
+          display: `${displayBackground}`,
+        }}
+      ></div>
       <section className='genesisContainer'>
         <Header active='genesis' />
         <div className='genesisText'>
-          <strong>
-            Introducing Infinite Genesis in Bogotá
-          </strong>
+          <strong>Introducing Infinite Genesis in Bogotá</strong>
+        </div>
+        <div className='date-field'>
+          <strong>7-9 of October 2022</strong>
         </div>
         <div className='date-field'>
           <strong>7-9 of October 2022</strong>
@@ -43,15 +60,22 @@ export default function Genesis() {
         <div className='bodyContainer'>
           <div className='bodyGenesis bodyText'>
             <strong> Welcome to the inaguration of Infinite. </strong>
-            <br />
-            <br />
-            In this celebratory iniatiation of Infinite, hackers from far and wide will congregate around the beautiful city of Bogotá, Colombia to collaborate, build, and prepare for the coming events at Devcon VI.
-            <br />
-            <br />
-            Infinite arose from an innate desire to provide the industry with a special type of hackathon - a more intimate experience where builders can come to learn with minimal interruptions. Hackers will be able to unleash their innovative and creative energy while avoiding distractions, inefficiencies, and other unnecessary fuss.
+
+            <p className='bodyParagraphs'>
+              In this celebratory iniatiation of Infinite, hackers from far and
+              wide will congregate around the beautiful city of Bogotá, Colombia
+              to collaborate, build, and prepare for the coming events at Devcon
+              VI.
+            </p>
+            <p className='bodyParagraphs'>
+              Infinite arose from an innate desire to provide the industry with
+              a special type of hackathon - a more intimate experience where
+              builders can come to learn with minimal interruptions. Hackers
+              will be able to unleash their innovative and creative energy while
+              avoiding distractions, inefficiencies, and other unnecessary fuss.
+            </p>
           </div>
         </div>
-      </section>
 
         <div className='bodyContainer'>
           <div ref={organizersRef}>
@@ -82,23 +106,32 @@ export default function Genesis() {
               customStyle='databox-right databox column'
             />
           </div>
+          <div className='imgContainer'>
+            <img src={collage} alt='bogota' className='bodyGenesis' />
+          </div>
           <div className='bodyGenesis bodyText'>
             <strong> A gorgeous and accommodating venue. </strong>
             <br />
             <br />
-            The hackathon of the future will happen in an environment conducive to creation and innovation. Hilton DoubleTree Conference Salitre, in Bogotá Colombia, will house the first of many wandering the Infinite. Weary travellers will have access to breakfast, lunch and dinner, with snacks and refreshments all day long.          <br />
+            The hackathon of the future will happen in an environment conducive
+            to creation and innovation. Hilton DoubleTree Conference Salitre, in
+            Bogotá Colombia, will house the first of many wandering the
+            Infinite. Weary travellers will have access to breakfast, lunch and
+            dinner, with snacks and refreshments all day long. <br />
           </div>
-
           <div className='bodyGenesis bodyText'>
             <strong> A collection of fun prizes. </strong>
             <br />
             <br />
-            Infinite will award a variety of interesting rewards to hackers, including medals, NFTs and crypto. Organizers will be hosting their own bounties alongside this.
+            Infinite will award a variety of interesting rewards to hackers,
+            including medals, NFTs and crypto. Organizers will be hosting their
+            own bounties alongside this.
           </div>
           <Faq />
+        </div>
+      </section>
+        <div ref={dropRef}>
           <Drop />
-          <Social />
-          <Footer />
         </div>
     </>
   )
