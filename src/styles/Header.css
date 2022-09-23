@@ -17,20 +17,13 @@
   float: right;
 }
 
-.button-white {
-  background-color: #fff;
-  border-radius: 40px;
-  border: solid 1px #fff;
-  margin-left: 5px;
-}
-
 .apply-btn-text {
   margin-left: 5px;
   color: #000;
 }
 
 .dot {
-  background-color: #FFF;
+  background-color: #fff;
   border-radius: 50%;
   display: inline-block;
   height: 9px;
@@ -45,8 +38,8 @@
 }
 
 .active {
-  background-color: #1400FF;
-  border: solid 1px #1400FF;
+  background-color: #1400ff;
+  border: solid 1px #1400ff;
   color: #fff;
 }
 
@@ -57,7 +50,7 @@
 }
 
 @media screen and (max-width: 900px) {
-  .header{
+  .header {
     display: block;
   }
 

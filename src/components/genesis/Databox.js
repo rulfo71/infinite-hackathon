@@ -6,11 +6,11 @@ export default function Databox(props) {
   return (
     <div className={customStyle}>
       <div className='dataBoxTitle'>{title}</div>
-      <hr className='solid' />
+      <hr className='solid databoxDivider' />
       <div className='dataBoxBody'>{body}</div>
       {footer.length > 0 && (
         <div>
-          <hr className='solid' />
+          <hr className='solid databoxDivider' />
           {externalLink ? (
             <div className='dataBoxFooter'>
               <a

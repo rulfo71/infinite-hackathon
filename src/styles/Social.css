@@ -1,6 +1,6 @@
 .socialContainer {
   text-align: -webkit-center;
-  margin-top: 75px;
+  margin-top: 200px;
 }
 
 .socialIcon {
@@ -28,12 +28,12 @@
   font-weight: bold;
 }
 
-
 @media screen and (max-width: 900px) {
   .socialContainer {
     text-align: -webkit-center;
     display: grid;
     justify-content: center;
+    margin-top: 50px;
   }
 
   .buttonSocial {
@@ -45,11 +45,9 @@
     border-radius: 35px;
   }
 
-
   .socialText {
     font-size: 1rem;
   }
-
 
   .socialIcon {
     width: 20px;

@@ -1,7 +1,13 @@
-.button {
+.subtitleSection {
+  display: flex;
+  margin-top: 20px;
+  font-size: 1vw;
+}
+
+.date-field {
   border-radius: 50px;
-  border: solid 1px #000;
-  cursor: pointer;
+  border: solid 1px #fff;
+  background-color: #fff;
   display: inline-block;
   font-family: 'Space Grotesk';
   margin: 10px;
@@ -9,22 +15,17 @@
   padding: 20px;
   width: fit-content;
   font-size: 1vw;
-}
-
-.button:hover {
-  border: solid 1px palevioletred;
-}
-
-.button-white {
-  background-color: #fff;
-  border-radius: 40px;
-  border: solid 1px #fff;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 900px) {
-  .button {
+  .date-field {
     font-size: 1rem;
     margin-top: 10px;
+    align-self: center;
     padding: 15px;
+  }
+  .subtitleSection {
+    display: block;
   }
 }
