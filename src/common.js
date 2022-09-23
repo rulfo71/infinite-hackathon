@@ -61,6 +61,13 @@ export const organizers = [
     url: 'https://kleros.io/',
   },
   {
+    logo: 'ethswarm.png',
+    name: 'SWARM',
+    rol: 'GENESIS CO-ORGANIZER',
+    description: 'DATA STORAGE CHAMPIONS',
+    url: 'https://www.ethswarm.org/',
+  },
+  {
     logo: 'join.png',
     name: 'JOIN US',
     rol: 'BECOME AN ORGANIZER',
