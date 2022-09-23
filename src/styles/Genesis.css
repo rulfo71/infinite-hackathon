@@ -1,14 +1,11 @@
 .genesisContainer {
-  /* background-image: url('../static/genesis-background-square.png');
-  background-repeat: no-repeat;
-  background-size: cover; */
   min-height: 100vh;
   padding: 50px;
   position: relative;
 }
 
 .background-image {
-  background-image: url('../static/genesis-background-square.png');
+  background-image: url('../static/genesis-background-square-low.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
