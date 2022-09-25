@@ -23,10 +23,6 @@ export default function InfinitePhrase(props) {
 
   opacity = opacity < 0.1 ? 0.1 : opacity
 
-  console.log('opacity: ', opacity)
-  console.log('scrollPosition: ', scrollPosition)
-  console.log('ref: ', ref)
-
   return (
     <div ref={ref} style={{ opacity: `${opacity}` }} className='infinitePhrase'>
       {phrase}
