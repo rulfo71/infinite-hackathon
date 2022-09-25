@@ -12,20 +12,21 @@ export default function InfinitePhrase(props) {
       ref.current?.offsetHeight / 2
     : 1
 
-  let opacityCalculated = Math.abs(
-    Math.abs(scrollPosition) / positionOfElementInTheMiddle
-  )
-
   let opacity =
-    opacityCalculated > 1
-      ? Math.abs(opacityCalculated - 2)
-      : opacityCalculated - 0.4
+    Math.abs(scrollPosition - positionOfElementInTheMiddle) < 40 ? 1 : 0.2
 
   opacity = opacity < 0.1 ? 0.1 : opacity
 
   return (
-    <div ref={ref} style={{ opacity: `${opacity}` }} className='infinitePhrase'>
-      {phrase}
-    </div>
+    <>
+      <div
+        ref={ref}
+        style={{ opacity: `${opacity}` }}
+        className='infinitePhrase'
+      >
+        {phrase}
+      </div>
+      <hr className='infinitePhraseDivider' />
+    </>
   )
 }

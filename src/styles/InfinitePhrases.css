@@ -10,9 +10,10 @@
   font-size: 2vw;
 }
 
-.infinitePhrase {
+.infinitePhraseDivider {
   margin-top: 1vw;
   margin-bottom: 1vw;
+  border: 1px;
 }
 
 .fade {
@@ -27,10 +28,5 @@
     font-size: 1.5rem;
     width: 90%;
     margin-top: 50px;
-  }
-
-  .infinitePhrase {
-    margin-top: 25px;
-    margin-bottom: 25px;
   }
 }
