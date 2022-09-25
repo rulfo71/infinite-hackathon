@@ -6,21 +6,29 @@ import Organizers from '../../components/Organizers'
 import Databox from '../../components/genesis/Databox'
 import Faq from '../../components/genesis/FAQ'
 import Drop from '../../components/Drop'
+import Social from '../../components/Social'
+import Footer from '../../components/Footer'
 import bogota from '../../static/bogota.png'
+import dropImg from '../../static/Drop.png'
 import collage from '../../static/collage.png'
 import { useRef } from 'react'
 import useScrollPosition from '../../hooks/useScrollPosition'
 import Subtitle from '../../components/Subtitle'
+import { calculateDropStyle } from '../../common/calculateDropStyle'
 
 export default function Genesis() {
   const organizersRef = useRef()
   const dropRef = useRef()
 
   const scrollPosition = useScrollPosition()
+  // calculate ring background img position and opacity
   let backgroundImgPosition = `${scrollPosition}px`
   let dropPosition = dropRef?.current?.offsetTop
   let opacityBackground = 1 - scrollPosition / dropPosition
   let displayBackground = scrollPosition > dropPosition ? 'none' : 'block'
+
+  const { dropImgWidth, backgroundDropPosition, displaybackgroundDrop } =
+    calculateDropStyle(scrollPosition, dropPosition)
 
   return (
     <>
@@ -32,6 +40,21 @@ export default function Genesis() {
           display: `${displayBackground}`,
         }}
       ></div>
+      <div
+        className='background-drop'
+        style={{
+          color: `white`,
+          top: `${backgroundDropPosition}px`,
+          display: `${displaybackgroundDrop}`,
+        }}
+      >
+        <img
+          src={dropImg}
+          alt='bogota'
+          className='bodyGenesis'
+          style={{ maxWidth: `${dropImgWidth}%` }}
+        />
+      </div>
       <section className='genesisContainer'>
         <Header active='genesis' />
         <div className='genesisMainText'>
@@ -139,6 +162,8 @@ export default function Genesis() {
       <div ref={dropRef}>
         <Drop />
       </div>
+      <Social />
+      <Footer />
     </>
   )
 }

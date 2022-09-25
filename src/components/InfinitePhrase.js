@@ -1,10 +1,9 @@
 import { useRef } from 'react'
-import useScrollPosition from '../hooks/useScrollPosition'
 import '../styles/InfinitePhrases.css'
 
 export default function InfinitePhrase(props) {
-  const { phrase } = props
-  const scrollPosition = useScrollPosition()
+  const { phrase, scrollPosition } = props
+
   const ref = useRef()
 
   const positionOfElementInTheMiddle = ref.current?.offsetTop

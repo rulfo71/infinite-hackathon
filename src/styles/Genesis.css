@@ -18,6 +18,12 @@
   min-height: 120vh;
 }
 
+.background-drop {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
 .genesisMainText {
   color: #fff;
   font-size: 7vw;
