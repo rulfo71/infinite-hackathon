@@ -24,7 +24,8 @@ export default function Genesis() {
   // calculate ring background img position and opacity
   let backgroundImgPosition = `${scrollPosition}px`
   let dropPosition = dropRef?.current?.offsetTop
-  let opacityBackground = 1 - scrollPosition / dropPosition
+  let opacityBackground =
+    1 - scrollPosition / (dropPosition - window.innerHeight)
   let displayBackground = scrollPosition > dropPosition ? 'none' : 'block'
 
   const { dropImgWidth, backgroundDropPosition, displaybackgroundDrop } =
