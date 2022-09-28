@@ -1,21 +1,10 @@
 .genesisContainer {
-  min-height: 100vh;
-  padding: 50px;
-  position: relative;
-}
-
-.background-image {
-  background-image: url('../static/genesis-background-square-low-half.png');
+  background-image: url('../static/genesis-background-square-low.png');
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
   background-attachment: fixed;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: auto;
-  min-height: 120vh;
+  background-size: 100%;
+  background-position: center;
+  padding: 1rem;
 }
 
 .background-drop {

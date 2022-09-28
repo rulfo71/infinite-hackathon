@@ -19,28 +19,23 @@ import { calculateDropStyle } from '../../common/calculateDropStyle'
 export default function Genesis() {
   const organizersRef = useRef()
   const dropRef = useRef()
+  const genesisContainer = useRef()
 
   const scrollPosition = useScrollPosition()
-  // calculate ring background img position and opacity
-  let backgroundImgPosition = `${scrollPosition}px`
   let dropPosition = dropRef?.current?.offsetTop
-  let opacityBackground =
-    1 - scrollPosition / (dropPosition - window.innerHeight)
-  let displayBackground = scrollPosition > dropPosition ? 'none' : 'block'
+
+  window.onscroll = function () {
+    if (scrollPosition > 0) {
+      var opac = scrollPosition / dropPosition
+      genesisContainer.current.style.boxShadow = `inset 0 0 0 1000px rgba(0,0,0,${opac})`
+    }
+  }
 
   const { dropImgWidth, backgroundDropPosition, displaybackgroundDrop } =
     calculateDropStyle(scrollPosition, dropPosition)
 
   return (
     <>
-      <div
-        className='background-image'
-        style={{
-          top: `${backgroundImgPosition}`,
-          opacity: `${opacityBackground}`,
-          display: `${displayBackground}`,
-        }}
-      ></div>
       <div
         className='background-drop'
         style={{
@@ -56,7 +51,7 @@ export default function Genesis() {
           style={{ maxWidth: `${dropImgWidth}%` }}
         />
       </div>
-      <section className='genesisContainer'>
+      <section className='genesisContainer' ref={genesisContainer}>
         <Header active='genesis' />
         <div className='genesisMainText'>
           <strong>Introducing Infinite Genesis in Bogotá</strong>
