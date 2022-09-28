@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "./static/css/main.281a5c08.css",
-    "main.js": "./static/js/main.a446b692.js",
+    "main.css": "./static/css/main.7564be19.css",
+    "main.js": "./static/js/main.d924e5bb.js",
     "static/media/Drop.png": "./static/media/Drop.07fddc761ec836508f70.png",
     "static/media/bogota.png": "./static/media/bogota.d07f80478b076e5a0399.png",
     "static/media/collage.png": "./static/media/collage.e091fd40103efe537c32.png",
+    "static/media/genesis-background-square-low.png": "./static/media/genesis-background-square-low.d64db0f3afdbf666baf6.png",
     "static/media/background-low.png": "./static/media/background-low.85e4481956bcd59b38f4.png",
-    "static/media/genesis-background-square-low-half.png": "./static/media/genesis-background-square-low-half.6d92ad43e41959242c3c.png",
     "static/media/SpaceGrotesk-Light.ttf": "./static/media/SpaceGrotesk-Light.1cb0366853ec7b625eb2.ttf",
     "static/media/SpaceGrotesk-Medium.ttf": "./static/media/SpaceGrotesk-Medium.922ec0f910362b8c7e5c.ttf",
     "static/media/SpaceGrotesk-Regular.ttf": "./static/media/SpaceGrotesk-Regular.0af8901c66919168e22b.ttf",
@@ -15,11 +15,11 @@
     "static/media/body.png": "./static/media/body.dff1df76d2b8b4477dda.png",
     "static/media/infinite.svg": "./static/media/infinite.437d37d97bc5f9ad8b4b022424ea663d.svg",
     "index.html": "./index.html",
-    "main.281a5c08.css.map": "./static/css/main.281a5c08.css.map",
-    "main.a446b692.js.map": "./static/js/main.a446b692.js.map"
+    "main.7564be19.css.map": "./static/css/main.7564be19.css.map",
+    "main.d924e5bb.js.map": "./static/js/main.d924e5bb.js.map"
   },
   "entrypoints": [
-    "static/css/main.281a5c08.css",
-    "static/js/main.a446b692.js"
+    "static/css/main.7564be19.css",
+    "static/js/main.d924e5bb.js"
   ]
 }
