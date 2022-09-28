@@ -26,7 +26,7 @@ export default function Genesis() {
 
   window.onscroll = function () {
     if (scrollPosition > 0) {
-      var opac = scrollPosition / dropPosition
+      var opac = scrollPosition / (dropPosition - 1000)
       genesisContainer.current.style.boxShadow = `inset 0 0 0 1000px rgba(0,0,0,${opac})`
     }
   }
