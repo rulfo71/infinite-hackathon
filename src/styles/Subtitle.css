@@ -17,8 +17,6 @@
 @media screen and (max-width: 900px) {
   .date-location-field {
     font-size: 1rem;
-    margin-top: 10px;
     align-self: center;
-    padding: 15px;
   }
 }

@@ -118,4 +118,8 @@
   .bodyGenesis {
     max-width: 95%;
   }
+
+  .imgContainer {
+    margin-top: 100px;
+  }
 }
