@@ -56,7 +56,12 @@ export default function Genesis() {
         <div className='genesisMainText'>
           <strong>Introducing Infinite Genesis in Bogotá</strong>
         </div>
-        <Subtitle dateLocationColor='white' />
+        <Subtitle
+          dateLocationColor='white'
+          buttonText='APPLY TO HACK'
+          buttonLink='https://forms.gle/gKy5XM2YLNP3gNXU9'
+          isLocalRedirect={false}
+        />
 
         <div className='imgContainer'>
           <img src={bogota} alt='bogota' className='bodyGenesis' />

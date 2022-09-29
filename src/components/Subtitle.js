@@ -2,7 +2,7 @@ import '../styles/Subtitle.css'
 import Button from './Button'
 
 export default function Subtitle(props) {
-  const { dateLocationColor } = props
+  const { dateLocationColor, buttonText, buttonLink, isLocalRedirect } = props
 
   return (
     <section className='subtitleSection'>
@@ -16,13 +16,13 @@ export default function Subtitle(props) {
       </div>
       <div>
         <Button
-          text='LEARN MORE'
+          text={buttonText}
           classButton='button button-white'
           img='enter-icon.png'
           classImg='dot'
           classText='apply-btn-text'
-          link='/genesis'
-          isLocalRedirect
+          link={buttonLink}
+          isLocalRedirect={isLocalRedirect}
         />
       </div>
     </section>

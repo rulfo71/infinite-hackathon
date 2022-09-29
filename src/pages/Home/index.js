@@ -52,7 +52,12 @@ export default function Home() {
               Genesis
             </div>
           </section>
-          <Subtitle dateLocationColor='black' />
+          <Subtitle
+            dateLocationColor='black'
+            buttonText='LEARN MORE'
+            buttonLink='/genesis'
+            isLocalRedirect={true}
+          />
           <InfinitePhrases scrollPosition={scrollPosition} />
         </section>
         <Organizers />
