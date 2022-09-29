@@ -1,10 +1,19 @@
 import '../styles/Subtitle.css'
 import Button from './Button'
 
-export default function Subtitle() {
+export default function Subtitle(props) {
+  const { dateLocationColor } = props
+
   return (
     <section className='subtitleSection'>
-      <div className='date-field '>7-9 of October 2022</div>
+      <div
+        className='date-location-field'
+        style={{
+          color: `${dateLocationColor}`,
+        }}
+      >
+        7-9 of October 2022 - Hilton DoubleTree Conference Salitre
+      </div>
       <div>
         <Button
           text='LEARN MORE'

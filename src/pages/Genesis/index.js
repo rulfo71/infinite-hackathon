@@ -56,7 +56,7 @@ export default function Genesis() {
         <div className='genesisMainText'>
           <strong>Introducing Infinite Genesis in Bogotá</strong>
         </div>
-        <Subtitle />
+        <Subtitle dateLocationColor='white' />
 
         <div className='imgContainer'>
           <img src={bogota} alt='bogota' className='bodyGenesis' />

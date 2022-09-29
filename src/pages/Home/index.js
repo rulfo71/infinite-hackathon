@@ -52,7 +52,7 @@ export default function Home() {
               Genesis
             </div>
           </section>
-          <Subtitle />
+          <Subtitle dateLocationColor='black' />
           <InfinitePhrases scrollPosition={scrollPosition} />
         </section>
         <Organizers />
