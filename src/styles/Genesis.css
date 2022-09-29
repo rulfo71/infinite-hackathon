@@ -1,37 +1,38 @@
 .genesisContainer {
-  /* background-image: url('../static/genesis-background-square.png');
+  background-image: url('../static/genesis-background-square-low.png');
   background-repeat: no-repeat;
-  background-size: cover; */
-  min-height: 100vh;
-  padding: 50px;
-  position: relative;
-}
-
-.background-image {
-  background-image: url('../static/genesis-background-square.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   background-attachment: fixed;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: auto;
-  min-height: 110vh;
+  background-size: 100%;
+  background-position: center;
+  padding: 40px;
 }
 
-.genesisText {
+.background-drop {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.genesisMainText {
   color: #fff;
-  font-size: 5vw;
-  width: 60%;
+  font-size: 7vw;
+  width: 90%;
   margin-top: 100px;
+  line-height: 7vw;
+  text-shadow: 1px 0 #fff;
+  font-weight: bolder;
 }
 
 .bodyGenesis {
   justify-self: center;
-  max-width: 70%;
+  max-width: 65%;
   height: auto;
+}
+
+.genesisBodyTitle {
+  font-weight: bolder;
+  font-size: 2.5vw;
 }
 
 .bodyContainer {
@@ -44,18 +45,18 @@
 
 .imgContainer {
   display: grid;
-  margin-top: 100px;
+  margin-top: 200px;
 }
 
 .bodyText {
   color: #fff;
   margin-top: 100px;
   width: 65%;
-  font-size: 2.5vw;
+  font-size: 2vw;
+  line-height: 2vw;
 }
 
 .bodyParagraphs {
-  margin-top: 150px;
   font-size: 2vw;
 }
 
@@ -66,7 +67,10 @@
 
 .uniquePhrase {
   font-size: 2.5vw;
-  width: 53%;
+  width: 60%;
+  font-family: 'Space Grotesk';
+  font-weight: bolder;
+  line-height: 3vw;
 }
 
 @media screen and (max-width: 900px) {
@@ -77,36 +81,45 @@
     display: grid;
     place-items: center;
   }
-
-  .genesisContainer {
-    background-position: center;
-    padding: 20px;
+  .genesisMainText {
+    font-size: 3rem;
+    line-height: 3rem;
   }
 
-  .genesisText {
-    font-size: 3rem;
+  .genesisContainer {
+    background-size: cover;
+    padding: 20px;
+  }
+  .genesisBodyTitle {
+    font-size: 1rem;
   }
 
   .bodyText {
     font-size: 1.3rem;
     width: auto;
+    line-height: 1rem;
+    margin-top: 50px;
   }
 
   .bodyParagraphs {
     font-size: 1rem;
-    margin-top: 50px;
+    margin-top: 25px;
   }
 
   .uniquePhrase {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
   }
 
   .bodyContainer {
-    display: grid;
-    margin-top: 0px;
+    margin-top: 50px;
   }
 
   .bodyGenesis {
-    max-width: 80%;
+    max-width: 95%;
+  }
+
+  .imgContainer {
+    margin-top: 100px;
   }
 }

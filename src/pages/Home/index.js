@@ -1,37 +1,72 @@
 // styles
-import '../../styles/Home.css';
+import '../../styles/Home.css'
 // components
-import Organizers from '../../components/Organizers';
-import InfinitePhrases from '../../components/InfinitePhrases';
-import Drop from '../../components/Drop';
-import Header from '../../components/Header';
-import Button from '../../components/Button';
+import Organizers from '../../components/Organizers'
+import InfinitePhrases from '../../components/InfinitePhrases'
+import Drop from '../../components/Drop'
+import Header from '../../components/Header'
+import Subtitle from '../../components/Subtitle'
+import { calculateDropStyle } from '../../common/calculateDropStyle'
+import useScrollPosition from '../../hooks/useScrollPosition'
+import dropImg from '../../static/Drop.png'
+import { useRef } from 'react'
+import Footer from '../../components/Footer'
+import Social from '../../components/Social'
 
 export default function Home() {
+  const scrollPosition = useScrollPosition()
+
+  const dropRef = useRef()
+  let dropPosition = dropRef?.current?.offsetTop
+
+  const { dropImgWidth, backgroundDropPosition, displaybackgroundDrop } =
+    calculateDropStyle(scrollPosition, dropPosition)
+
   return (
     <>
+      <div
+        className='background-drop'
+        style={{
+          color: `white`,
+          top: `${backgroundDropPosition}px`,
+          display: `${displaybackgroundDrop}`,
+        }}
+      >
+        <img
+          src={dropImg}
+          alt='bogota'
+          className='bodyGenesis'
+          style={{ maxWidth: `${dropImgWidth}%` }}
+        />
+      </div>
       <section className='homeContainer'>
         <Header active='home' />
         <section className='bodyHome'>
           <section className='mainSection'>
             <div className='top-text'>
-              <span class="black-dot" /> <strong>INAUGURAL EVENT</strong>
+              <span class='black-dot' /> <strong>INAUGURAL EVENT</strong>
             </div>
+            <br />
             <div className='mainText'>
-              Be part of a new kind of hackathon in Bogotá: <br /> Infinite Genesis
-            </div>
-            <div className='date-field'>
-              <strong>7-9 of October 2022</strong>
-            </div>
-            <div>
-              <Button text='LEARN MORE' classButton='button button-white' img='enter-icon.png' classImg='dot' classText='apply-btn-text' link='/genesis' isLocalRedirect />
+              Be part of a new kind of hackathon in Bogotá: <br /> Infinite
+              Genesis
             </div>
           </section>
-          <InfinitePhrases />
+          <Subtitle
+            dateLocationColor='black'
+            buttonText='LEARN MORE'
+            buttonLink='/genesis'
+            isLocalRedirect={true}
+          />
+          <InfinitePhrases scrollPosition={scrollPosition} />
         </section>
         <Organizers />
       </section>
-      <Drop />      
+      <div ref={dropRef}>
+        <Drop />
+      </div>
+      <Social />
+      <Footer />
     </>
   )
 }

@@ -4,12 +4,12 @@
 }
 
 .homeContainer {
-  background-image: url('../../public/background.png');
+  background-image: url('../static/background-low.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
-  padding:  50px;
+  padding: 40px;
 }
 
 .top-text {
@@ -18,14 +18,14 @@
 }
 
 .mainText {
-  font-size: 5vw;
+  font-size: 7vw;
   text-shadow: 1px 0 #000;
   font-weight: bolder;
-  line-height: 7vw;
+  line-height: 6vw;
 }
 
 .mainSection {
-  max-width: 65%;
+  max-width: 90%;
 }
 
 .black-dot {
@@ -38,19 +38,13 @@
   margin-bottom: 2px;
 }
 
-
 @media screen and (max-width: 900px) {
   .mainText {
-    font-size: 2.5rem;
-    line-height: normal;
+    font-size: 3rem;
+    line-height: 3rem;
   }
 
   .homeContainer {
-    background-image: url('../../public/background.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
     padding: 20px;
   }
 
@@ -60,10 +54,10 @@
 
   .top-text {
     font-size: 0.9rem;
-    margin-bottom: -10px;
   }
 
   .bodyHome {
     display: flow-root;
+    padding-top: 20px;
   }
 }

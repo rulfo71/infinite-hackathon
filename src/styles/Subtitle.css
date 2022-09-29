@@ -1,0 +1,22 @@
+.subtitleSection {
+  display: block;
+  margin-top: 20px;
+  font-size: 1vw;
+}
+
+.date-location-field {
+  display: inline-block;
+  font-family: 'Space Grotesk';
+  margin-left: 10px;
+  margin-bottom: 20px;
+  width: fit-content;
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 900px) {
+  .date-location-field {
+    font-size: 1rem;
+    align-self: center;
+  }
+}

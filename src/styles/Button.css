@@ -1,6 +1,5 @@
 .button {
-  border-radius: 10px;
-  border: solid 1px #fff;
+  border-radius: 20px;
   cursor: pointer;
   display: inline-block;
   font-family: 'Space Grotesk';
@@ -15,10 +14,16 @@
   border: solid 1px palevioletred;
 }
 
+.button-white {
+  background-color: #fff;
+  border-radius: 40px;
+  border: solid 1px #fff;
+}
+
 @media screen and (max-width: 900px) {
   .button {
     font-size: 1rem;
     margin-top: 10px;
-    padding: 10px;
+    padding: 15px;
   }
 }

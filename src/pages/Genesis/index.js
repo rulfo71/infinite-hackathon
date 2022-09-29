@@ -1,54 +1,66 @@
-//genesis index.js
-
 // styles
 import '../../styles/Genesis.css'
 // components
-import Button from '../../components/Button'
 import Header from '../../components/Header'
 import Organizers from '../../components/Organizers'
 import Databox from '../../components/genesis/Databox'
 import Faq from '../../components/genesis/FAQ'
 import Drop from '../../components/Drop'
+import Social from '../../components/Social'
+import Footer from '../../components/Footer'
 import bogota from '../../static/bogota.png'
+import dropImg from '../../static/Drop.png'
 import collage from '../../static/collage.png'
 import { useRef } from 'react'
 import useScrollPosition from '../../hooks/useScrollPosition'
+import Subtitle from '../../components/Subtitle'
+import { calculateDropStyle } from '../../common/calculateDropStyle'
 
 export default function Genesis() {
   const organizersRef = useRef()
   const dropRef = useRef()
+  const genesisContainer = useRef()
 
-  const scrollPosition = useScrollPosition();
-  let backgroundImgPosition = `${scrollPosition}px`
+  const scrollPosition = useScrollPosition()
   let dropPosition = dropRef?.current?.offsetTop
-  let opacityBackground = 1 - scrollPosition / dropPosition
-  let displayBackground = scrollPosition > dropPosition ? 'none' : 'block'
+
+  window.onscroll = function () {
+    if (scrollPosition > 0) {
+      var opac = scrollPosition / (dropPosition - 1000)
+      genesisContainer.current.style.boxShadow = `inset 0 0 0 1000px rgba(0,0,0,${opac})`
+    }
+  }
+
+  const { dropImgWidth, backgroundDropPosition, displaybackgroundDrop } =
+    calculateDropStyle(scrollPosition, dropPosition)
 
   return (
     <>
       <div
-        className='background-image'
+        className='background-drop'
         style={{
-          top: `${backgroundImgPosition}`,
-          opacity: `${opacityBackground}`,
-          display: `${displayBackground}`,
+          color: `white`,
+          top: `${backgroundDropPosition}px`,
+          display: `${displaybackgroundDrop}`,
         }}
-      ></div>
-      <section className='genesisContainer'>
+      >
+        <img
+          src={dropImg}
+          alt='bogota'
+          className='bodyGenesis'
+          style={{ maxWidth: `${dropImgWidth}%` }}
+        />
+      </div>
+      <section className='genesisContainer' ref={genesisContainer}>
         <Header active='genesis' />
-        <div className='genesisText'>
+        <div className='genesisMainText'>
           <strong>Introducing Infinite Genesis in Bogotá</strong>
         </div>
-        <div className='date-field'>
-          <strong>7-9 of October 2022</strong>
-        </div>
-        <Button
-          text='APPLY TO HACK'
-          img='enter-icon.png'
-          classImg='dot'
-          classText='apply-btn-text'
-          classButton='button button-white'
-          link='https://forms.gle/gKy5XM2YLNP3gNXU9'
+        <Subtitle
+          dateLocationColor='white'
+          buttonText='APPLY TO HACK'
+          buttonLink='https://forms.gle/gKy5XM2YLNP3gNXU9'
+          isLocalRedirect={false}
         />
 
         <div className='imgContainer'>
@@ -56,7 +68,9 @@ export default function Genesis() {
         </div>
         <div className='bodyContainer'>
           <div className='bodyGenesis bodyText'>
-            <strong> Welcome to the inaguration of Infinite. </strong>
+            <p className='genesisBodyTitle'>
+              Welcome to the inaguration of Infinite.
+            </p>
 
             <p className='bodyParagraphs'>
               In this celebratory iniatiation of Infinite, hackers from far and
@@ -78,7 +92,7 @@ export default function Genesis() {
           <div ref={organizersRef}>
             <Organizers />
           </div>
-          <div className='bodyGenesis bodyText uniquePhrase'>
+          <div className='bodyGenesis bodyText uniquePhrase bodyContainer'>
             The most unique take on a “hacker-first” hackathon in Ethereum.
           </div>
           <div className='dataBoxContainer'>
@@ -92,7 +106,7 @@ export default function Genesis() {
             <Databox
               title='PUBLIC JUDGING'
               body='Judges will be chosen by event organizers; members drawn from involved communities. Both project presentations and judging will be conducted in public featuring real-time results.'
-              footer=''
+              footer=' '
               customStyle='databox-center databox column'
             />
             <Databox
@@ -103,33 +117,54 @@ export default function Genesis() {
               customStyle='databox-right databox column'
             />
           </div>
-          <div className='imgContainer'>
+          <div className='bodyContainer'>
             <img src={collage} alt='bogota' className='bodyGenesis' />
           </div>
-          <div className='bodyGenesis bodyText'>
-            <strong> A gorgeous and accommodating venue. </strong>
-            <br />
-            <br />
-            The hackathon of the future will happen in an environment conducive
-            to creation and innovation. Hilton DoubleTree Conference Salitre, in
-            Bogotá Colombia, will house the first of many wandering the
-            Infinite. Weary travellers will have access to breakfast, lunch and
-            dinner, with snacks and refreshments all day long. <br />
+          <div className='bodyGenesis bodyText bodyContainer'>
+            <p className='genesisBodyTitle'>
+              A gorgeous and accommodating venue.
+            </p>
+            <p className='bodyParagraphs'>
+              The hackathon of the future will happen in an environment
+              conducive to creation and innovation. Hilton DoubleTree Conference
+              Salitre, in Bogotá Colombia, will house the first of many
+              wandering the Infinite. Weary travellers will have access to
+              breakfast, lunch and dinner, with snacks and refreshments all day
+              long. <br />
+            </p>
           </div>
           <div className='bodyGenesis bodyText'>
-            <strong> A collection of fun prizes. </strong>
-            <br />
-            <br />
-            Infinite will award a variety of interesting rewards to hackers,
-            including medals, NFTs and crypto. Organizers will be hosting their
-            own bounties alongside this.
+            <p className='genesisBodyTitle'>A collection of fun prizes. </p>
+            <p className='bodyParagraphs'>
+              Infinite will award a variety of interesting rewards to hackers,
+              including medals, NFTs and crypto. Organizers will be hosting
+              their own bounties alongside this.
+            </p>
+          </div>
+          <div className='bodyGenesis bodyText'>
+            <p className='genesisBodyTitle'>A variety of incentives. </p>
+            <p className='bodyParagraphs'>
+              There are <i>infinite</i> reasons to join Infinite hackathons.
+              Participation in the genesis event grants hackers access to travel
+              grants, hacker house accommodation, token prizes, and much more.
+              Learn how to become eligible at the{' '}
+              <a
+                style={{ 'text-decoration': 'underline' }}
+                href='https://discord.gg/sqrHkJgA2w'
+              >
+                Infinite Discord
+              </a>
+              !
+            </p>
           </div>
           <Faq />
         </div>
       </section>
-        <div ref={dropRef}>
-          <Drop />
-        </div>
+      <div ref={dropRef}>
+        <Drop />
+      </div>
+      <Social />
+      <Footer />
     </>
   )
 }
