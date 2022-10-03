@@ -1,0 +1,95 @@
+.schedule-section {
+  color: #fff;
+  display: grid;
+  place-content: center;
+  margin-top: 200px;
+}
+
+.schedule-title {
+  font-size: 5vw;
+  font-weight: bold;
+  text-align: center;
+}
+
+.days-container {
+  display: flex;
+  margin: 20px;
+}
+
+.day-article {
+  background-color: #000;
+  border-radius: 20px;
+  padding: 20px;
+  width: 30%;
+  margin: 20px;
+  position: relative;
+}
+
+.footer-day-schedule {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
+
+.day-number {
+  color: palevioletred;
+}
+
+.date-title {
+  font-size: 2rem;
+  font-weight: 900;
+  padding-bottom: 10px;
+}
+
+.time-and-title {
+  font-weight: 900;
+  padding-top: 15px;
+  font-size: 20px;
+}
+
+.details {
+  font-weight: 100;
+  margin-left: 15%;
+}
+
+.last-time-detail {
+  padding-bottom: 60px;
+}
+
+.details-row {
+  display: flex;
+}
+
+.column-details {
+  flex: 50%;
+}
+
+.white-dot {
+  height: 5px;
+  width: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 2px;
+}
+
+@media screen and (max-width: 900px) {
+  .schedule-section {
+    margin-top: 100px;
+  }
+
+  .schedule-title {
+    font-size: 3rem;
+  }
+
+  .days-container {
+    display: grid;
+  }
+
+  .day-article {
+    width: 100%;
+    margin: 0px;
+    margin-top: 20px;
+  }
+}
