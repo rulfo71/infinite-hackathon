@@ -8,13 +8,13 @@ import Faq from '../../components/genesis/FAQ'
 import Drop from '../../components/Drop'
 import Social from '../../components/Social'
 import Footer from '../../components/Footer'
-import bogota from '../../static/bogota.png'
 import dropImg from '../../static/Drop.png'
 import collage from '../../static/collage.png'
 import { useRef } from 'react'
 import useScrollPosition from '../../hooks/useScrollPosition'
 import Subtitle from '../../components/Subtitle'
 import { calculateDropStyle } from '../../common/calculateDropStyle'
+import Schedule from '../../components/schedule/Schedule'
 
 export default function Genesis() {
   const organizersRef = useRef()
@@ -63,9 +63,8 @@ export default function Genesis() {
           isLocalRedirect={false}
         />
 
-        <div className='imgContainer'>
-          <img src={bogota} alt='bogota' className='bodyGenesis' />
-        </div>
+        <Schedule />
+
         <div className='bodyContainer'>
           <div className='bodyGenesis bodyText'>
             <p className='genesisBodyTitle'>
