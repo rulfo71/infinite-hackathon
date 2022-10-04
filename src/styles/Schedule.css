@@ -74,6 +74,10 @@
   margin-bottom: 2px;
 }
 
+.extra-spacing {
+  padding-top: 60px;
+}
+
 @media screen and (max-width: 900px) {
   .schedule-section {
     margin-top: 100px;
@@ -91,5 +95,9 @@
     width: 100%;
     margin: 0px;
     margin-top: 20px;
+  }
+
+  .extra-spacing {
+    padding-top: 15px;
   }
 }

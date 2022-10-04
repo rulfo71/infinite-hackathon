@@ -31,7 +31,6 @@ export default function Schedule() {
                 )}
               </div>
             </div>
-            <div className='details'>30 minutes for each co-org.</div>
           </TimeDetail>
           <TimeDetail title='12:30pm:'>
             <div className='details'>
@@ -52,21 +51,32 @@ export default function Schedule() {
         </DaySchedule>
         <DaySchedule number='02' title='SAT OCT 8TH'>
           <TimeDetail title='Full day of hacking' />
-          <TimeDetail title='8:00am: Breakfast' />
-          <TimeDetail title='12:30pm: Lunch' />
-          <TimeDetail title='2:30pm: Debug and Solidity In-depth' />
-          <TimeDetail title='5:30pm: Judging Rules Announced' />
-          <TimeDetail title='7:30pm: Dinner' customClass='last-time-detail' />
+          <TimeDetail title='8:00am: Breakfast' customClass='extra-spacing' />
+          <TimeDetail title='12:30pm: Lunch' customClass='extra-spacing' />
+          <TimeDetail
+            title='2:30pm: Debug and Solidity In-depth'
+            customClass='extra-spacing'
+          />
+          <TimeDetail
+            title='7:30pm: Dinner'
+            customClass='extra-spacing last-time-detail'
+          />
         </DaySchedule>
         <DaySchedule number='03' title='SUN OCT 9TH'>
           <TimeDetail title='Hacking until Midday' />
-          <TimeDetail title='8:00am: Breakfast' />
-          <TimeDetail title='12:00pm: Projects Submission Close' />
-          <TimeDetail title='12:30pm: Lunch' />
-          <TimeDetail title='1:00pm: Judging Begins' />
+          <TimeDetail title='8:00am: Breakfast' customClass='extra-spacing' />
+          <TimeDetail
+            title='12:00pm: Projects Submission Close'
+            customClass='extra-spacing'
+          />
+          <TimeDetail title='12:30pm: Lunch' customClass='extra-spacing' />
+          <TimeDetail
+            title='1:00pm: Judging Begins'
+            customClass='extra-spacing'
+          />
           <TimeDetail
             title='2:30pm: Awards Ceremony'
-            customClass='last-time-detail'
+            customClass='extra-spacing last-time-detail'
           />
         </DaySchedule>
       </div>

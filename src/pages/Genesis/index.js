@@ -14,7 +14,7 @@ import { useRef } from 'react'
 import useScrollPosition from '../../hooks/useScrollPosition'
 import Subtitle from '../../components/Subtitle'
 import { calculateDropStyle } from '../../common/calculateDropStyle'
-import Schedule from '../../components/genesis/Schedule'
+import Schedule from '../../components/schedule/Schedule'
 
 export default function Genesis() {
   const organizersRef = useRef()
