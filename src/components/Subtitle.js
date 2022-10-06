@@ -19,6 +19,8 @@ export default function Subtitle(props) {
             color: `${dateLocationColor}`,
           }}
           href='https://g.page/DoubleTreeBogota?share'
+          target='_blank'
+          rel='noreferrer'
         >
           Hilton DoubleTree Salitre
         </a>

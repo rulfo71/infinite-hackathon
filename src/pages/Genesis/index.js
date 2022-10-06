@@ -125,15 +125,18 @@ export default function Genesis() {
             </p>
             <p className='bodyParagraphs'>
               The hackathon of the future will happen in an environment
-              conducive to creation and innovation.         <a
+              conducive to creation and innovation.{' '}
+              <a
                 style={{ 'text-decoration': 'underline' }}
                 href='https://g.page/DoubleTreeBogota?share'
+                target='_blank'
+                rel='noreferrer'
               >
                 Hilton DoubleTree Salitre
-              </a>, in Bogotá Colombia, will house the first of many
-              wandering the Infinite. Weary travellers will have access to
-              breakfast, lunch and dinner, with snacks and refreshments all day
-              long. <br />
+              </a>
+              , in Bogotá Colombia, will house the first of many wandering the
+              Infinite. Weary travellers will have access to breakfast, lunch
+              and dinner, with snacks and refreshments all day long. <br />
             </p>
           </div>
           <div className='bodyGenesis bodyText'>
