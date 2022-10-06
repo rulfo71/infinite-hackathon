@@ -1,6 +1,6 @@
 {
   "name": "infinite-hackathon",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": false,
   "dependencies": {
     "cz": "^1.8.2",
