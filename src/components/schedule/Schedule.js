@@ -75,7 +75,11 @@ export default function Schedule() {
             customClass='extra-spacing'
           />
           <TimeDetail
-            title='2:30pm: Awards Ceremony'
+            title='3:00pm: Awards Ceremony'
+            customClass='extra-spacing'
+          />
+          <TimeDetail
+            title='4:00pm: Infinite Cocktail Hour'
             customClass='extra-spacing last-time-detail'
           />
         </DaySchedule>
