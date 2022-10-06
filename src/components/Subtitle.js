@@ -12,7 +12,13 @@ export default function Subtitle(props) {
           color: `${dateLocationColor}`,
         }}
       >
-        7-9 of October 2022 - Hilton DoubleTree Conference Salitre
+        7-9 of October 2022 - &nbsp;
+        <a
+                style={{ 'text-decoration': 'underline' }}
+                href='https://g.page/DoubleTreeBogota?share'
+              >
+                Hilton DoubleTree Salitre
+              </a>
       </div>
       <div>
         <Button
